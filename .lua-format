@@ -13,14 +13,14 @@ chop_down_parameter: true
 chop_down_table: false
 column_limit: 100
 column_table_limit: 100
-continuation_indent_width: 2
+continuation_indent_width: 4
 double_quote_to_single_quote: false
 extra_sep_at_table_end: false
-indent_width: 2
+indent_width: 4
 keep_simple_control_block_one_line: true
 keep_simple_function_one_line: true
 single_quote_to_double_quote: false
 spaces_before_call: 1
-tab_width: 2
+tab_width: 4
 table_sep: ','
 use_tab: false

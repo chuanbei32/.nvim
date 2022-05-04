@@ -1,3 +1,0 @@
-local gruvbox = {}
-
-return gruvbox

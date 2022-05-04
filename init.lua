@@ -1,13 +1,10 @@
-local utils = require("utils")
+local utils = require("tools.utils")
 
--- pcall(require, "impatient")
+local opts = {"cores", "plugins"}
 
-local nvim = {"core", "plugin"}
-
-for _, nvim_module in ipairs(nvim) do
-    local ok, err = xpcall(require, debug.traceback, nvim_module)
+for _, opt in ipairs(opts) do
+    local ok, err = xpcall(require, debug.traceback, opt)
     if not ok then
-        local msg = "calling module: " .. nvim_module .. " fail: " .. err
-        utils.errorL(msg)
+        utils.errorL(err)
     end
 end

@@ -1,4 +1,4 @@
-local utils = require("utils")
+local utils = require("tools.utils")
 
 local install_path = vim.fn.stdpath("data") .. "/site/pack/packer/opt/packer.nvim"
 
@@ -7,8 +7,7 @@ local function has_packer()
 end
 
 local function install_packer()
-local fn = vim.fn
-
+  local fn = vim.fn
   utils.infoL("Installing packer to " .. install_path)
   fn.system({
     "git",
@@ -55,42 +54,26 @@ local function setup_plugins()
       event = "VimEnter",
     })
 
-    for _, plugin in ipairs(require("plugin.plugins")) do
+    for _, plugin in ipairs(require("plugins.plugin.packer.use")) do
       use(plugin)
     end
 
-    require("plugin.plugins_cfg")
+    local ok, err = xpcall(require, debug.traceback, "plugins.plugin.cfgs")
+    if not ok then
+      utils.errorL(err)
+    end
   end)
 end
 
--- ======================================================
--- public functions
--- ======================================================
-local M = {}
-
--- load will try to detect the packer installation status.
--- It will automatically install packer to the install_path.
--- Then it will called the setup script to setup all the plugins.
-M.init = function()
-  if not has_packer() then
-    install_packer()
-    add_packer()
-    setup_plugins()
-    vim.cmd(
-      "au User PackerComplete echom 'Plugins are installed successfully, please use :qa to restart the neovim'"
-    )
-    require("packer").sync()
-    return
-  end
-
+if not has_packer() then
+  install_packer()
+  add_packer()
+  setup_plugins()
+  vim.cmd("au User PackerComplete echom 'Plugins are installed successfully, please use :qa to restart the neovim'")
+  require("packer").sync()
+  return
+else
   add_packer()
   init_packer()
   setup_plugins()
 end
-
--- M.load_cfg = function(file)
---   local prefix = "plugins.config."
---   require(prefix .. file)
--- end
-
-return M

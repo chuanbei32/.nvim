@@ -1,4 +1,4 @@
-local plugins = {
+local uses = {
 	-- 主题
 	"ellisonleao/gruvbox.nvim",
 	-- 界面
@@ -55,5 +55,4 @@ local plugins = {
 	"rhysd/git-messenger.vim",
 	"dyng/ctrlsf.vim",
 }
-
-return plugins
+return uses
