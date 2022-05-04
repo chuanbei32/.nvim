@@ -55,7 +55,7 @@ vim.opt.foldminlines = 1
 
 -- 补全
 vim.cmd("set complete-=t.i")
-vim.cmd("set completevim.opt-=preview")
+vim.cmd("set completeopt-=preview")
 
 -- 匹配
 vim.opt.matchpairs = '(:),{:},[:],<:>'
@@ -139,12 +139,12 @@ vim.opt.synmaxcol = 0
 vim.cmd("set display+=lastline")
 vim.cmd("set iskeyword+=_,$,@,%,#,-")
 vim.cmd("set switchbuf+=usetab,newtab,useopen")
-vim.cmd("set formatvim.options+=m,B")
+vim.cmd("set formatoptions+=m,B")
 vim.cmd("set selectmode+=mouse,key")
 vim.cmd("set shortmess+=S")
 vim.cmd("set clipboard+=unnamed")
-vim.cmd("set diffvim.opt+=vertical")
-vim.cmd("set viewvim.options-=vim.options")
+vim.cmd("set diffopt+=vertical")
+vim.cmd("set viewoptions-=vim.options")
 vim.cmd("set nrformats-=octal")
 
 -- -- nvui specific settings
