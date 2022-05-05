@@ -17,10 +17,10 @@ use = {
 	-- 图标
 	"kyazdani42/nvim-web-devicons", -- nvim-web-devicons
 	"onsails/lspkind-nvim", -- lspkind
+	"kosayoda/nvim-lightbulb",
 
 	-- 状态栏
 	"nvim-lualine/lualine.nvim", -- lualine
-
 	-- 缓冲区/标签区栏
 	"akinsho/bufferline.nvim", -- bufferline
 
@@ -38,17 +38,11 @@ use = {
 	-- "liuchengxu/vista.vim",
 	-- "stevearc/aerial.nvim",
 
-	-- 缩进
-	-- "Yggdroot/indentLine", -- indentLine
-	"glepnir/indent-guides.nvim", -- indent-guides
-
 	-- 代码高亮
 	"nvim-treesitter/nvim-treesitter", -- nvim-treesitter
 	-- "kyazdani42/nvim-tree.lua",
 	-- 彩虹括号
 	"p00f/nvim-ts-rainbow", -- nvim-ts-rainbow
-	-- 颜色
-	"norcalli/nvim-colorizer.lua", -- nvim-colorizer
 
 	-- 模糊搜索
 	-- "Yggdroot/LeaderF",
@@ -65,17 +59,22 @@ use = {
 	-- 浮动窗口
 	"akinsho/toggleterm.nvim", -- toggleterm
 
+	-- 文本对象
+	"wellle/targets.vim",
+	"tpope/vim-surround",
+	"terryma/vim-expand-region",
+	"junegunn/vim-easy-align",
+	"FooSoft/vim-argwrap",
+	"AndrewRadev/dsf.vim",
+
 	-- LSP
 	-- "dense-analysis/ale",
 	"neovim/nvim-lspconfig",
 	"williamboman/nvim-lsp-installer",
 	"tami5/lspsaga.nvim",
 	"ray-x/lsp_signature.nvim", -- lsp_signature
-	"kosayoda/nvim-lightbulb",
-	"folke/lsp-colors.nvim",
-	-- lsp 加载信息
-	"j-hui/fidget.nvim", -- fidget
-	-- Complete
+	"j-hui/fidget.nvim", -- fidget「加载信息」
+	-- Completion
 	"hrsh7th/nvim-cmp",
 	-- "hrsh7th/cmp-cmdline",
 	"hrsh7th/cmp-nvim-lsp",
@@ -96,6 +95,7 @@ use = {
 	"danymat/neogen", -- neogen
 	-- Lint
 	"mfussenegger/nvim-lint",
+	"folke/lsp-colors.nvim",
 	-- Format
 	"sbdchd/neoformat",
 	-- Debug
@@ -107,14 +107,8 @@ use = {
 	-- Tasks
 	"skywind3000/asynctasks.vim",
 
-	-- 文本对象
-	"wellle/targets.vim",
-	"tpope/vim-surround",
-	"terryma/vim-expand-region",
-	"junegunn/vim-easy-align",
-	"FooSoft/vim-argwrap",
-	"AndrewRadev/dsf.vim",
-
+	"norcalli/nvim-colorizer.lua", -- nvim-colorizer「颜色」
+	"glepnir/indent-guides.nvim", -- indent-guides「缩进」
 	"nathom/filetype.nvim", -- filetype「自动文件类型」
 	"simnalamburt/vim-mundo", -- vim-mundo「撤销」
 	"mg979/vim-visual-multi", -- vim-visual-multi「多游标」
@@ -125,10 +119,8 @@ use = {
 	"tpope/vim-unimpaired", -- vim-unimpaired「映射」
 	"rainbowhxch/accelerated-jk.nvim", -- accelerated-jk「加速 jk 移动速度」
 	"psliwka/vim-smoothie", -- vim-smoothie「翻页动画」
-
-	--
-	"AndrewRadev/tagalong.vim",
-	"alvan/vim-closetag",
+	"AndrewRadev/tagalong.vim", -- tagalong「配对 html/xml 标签」
+	"alvan/vim-closetag", -- closetag「自动关闭 html/xml 标签」
 
 }
 
