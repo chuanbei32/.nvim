@@ -54,19 +54,19 @@ vim.opt.foldnestmax = 20
 vim.opt.foldminlines = 1
 
 -- 补全
-vim.cmd("set complete-=t.i")
-vim.cmd("set completeopt-=preview")
+-- vim.cmd("set complete-=t.i")
+-- vim.cmd("set completeopt-=preview")
 
 -- 匹配
 vim.opt.matchpairs = '(:),{:},[:],<:>'
-vim.opt.matchtime = 1
 vim.opt.showmatch = true
+vim.opt.matchtime = 1
 
 -- 超时
 vim.opt.timeout = false
 vim.opt.ttimeout = false
-vim.opt.timeoutlen = 500
-vim.opt.ttimeoutlen = 500
+vim.opt.timeoutlen = 300
+vim.opt.ttimeoutlen = 300
 
 -- 终端
 vim.opt.shell = 'zsh'
@@ -90,11 +90,12 @@ vim.opt.scrolljump = 1
 vim.opt.signcolumn = 'yes'
 
 -- 命令行
-vim.opt.wildmenu = false
-vim.opt.wildmode = 'list:longest,full'
+vim.opt.wildmenu = true
+vim.opt.wildmode = 'list,longest,full'
 vim.opt.wildignorecase = true
+vim.opt.wildignorecase = false
 vim.opt.showcmd = true
-vim.opt.history = 10000
+vim.opt.history = 100
 
 -- 模式行
 vim.opt.modeline = true
@@ -118,7 +119,6 @@ vim.opt.showmode = false
 vim.opt.laststatus = 2
 vim.opt.showtabline = 2
 vim.opt.list = true
--- vim.cmd('set listchars=tab:\|\,trail:.,extends:>,precedes:<')
 
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -137,6 +137,7 @@ vim.opt.langnoremap = true
 vim.opt.shiftround = true
 vim.opt.synmaxcol = 0
 vim.opt.mouse = 'a'
+vim.cmd([[ set listchars=tab:\\|\\,trail:.,extends:>,precedes:< ]])
 vim.cmd("set display+=lastline")
 vim.cmd("set iskeyword+=_,$,@,%,#,-")
 vim.cmd("set switchbuf+=usetab,newtab,useopen")

@@ -20,18 +20,6 @@ vim.g.mapleader = "\\"
   map('n', '<s-tab>', 'V<')
   map('v', '<tab>', '>gv')
 
-  map('n', 'gj', 'j')
-  map('n', 'j', 'gj')
-  map('x', 'j', 'gj')
-  map('n', '<down>', 'gj')
-  map('x', '<down>', 'gj')
-
-  map('n', 'gk', 'k')
-  map('n', 'k', 'gk')
-  map('x', 'k', 'gk')
-  map('n', '<up>', 'gk')
-  map('x', '<up>', 'gk')
-
   map('n', 'gh', 'g^')
   map('n', 'gH', '^')
   map('n', 'gl', 'g$')

@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/DoxygenToolkit.vim",
     url = "https://github.com/vim-scripts/DoxygenToolkit.vim"
   },
+  ["accelerated-jk.nvim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/accelerated-jk.nvim",
+    url = "https://github.com/rainbowhxch/accelerated-jk.nvim"
+  },
   ["asyncrun.vim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/asyncrun.vim",
@@ -98,11 +103,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
-  },
-  ["cmp-cmdline"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
-    url = "https://github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -169,10 +169,10 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/incsearch.vim",
     url = "https://github.com/haya14busa/incsearch.vim"
   },
-  indentLine = {
+  ["indent-guides.nvim"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/indentLine",
-    url = "https://github.com/Yggdroot/indentLine"
+    path = "/root/.local/share/nvim/site/pack/packer/start/indent-guides.nvim",
+    url = "https://github.com/glepnir/indent-guides.nvim"
   },
   ["lsp-colors.nvim"] = {
     loaded = true,
@@ -208,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lightbulb"] = {
     loaded = true,
@@ -316,6 +321,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-easymotion",
     url = "https://github.com/easymotion/vim-easymotion"
   },
+  ["vim-eft"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-eft",
+    url = "https://github.com/hrsh7th/vim-eft"
+  },
   ["vim-expand-region"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-expand-region",
@@ -355,6 +365,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-signature",
     url = "https://github.com/kshenoy/vim-signature"
+  },
+  ["vim-signify"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-signify",
+    url = "https://github.com/mhinz/vim-signify"
   },
   ["vim-smoothie"] = {
     loaded = true,

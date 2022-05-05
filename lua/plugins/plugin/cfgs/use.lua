@@ -1,6 +1,5 @@
 local use = {
 	"dashboard",
-	"indentLine",
 	"lualine",
 	"bufferline",
 	"telescope",
@@ -14,5 +13,12 @@ local use = {
 	"fidget",
 	"lsp_signature",
 	"vim-smoothie",
+	"Comment",
+	"nvim-ts-context-commentstring",
+	"accelerated-jk",
+	"vim-eft",
+	"incsearch",
+	"indent-guides",
+	"nvim-colorizer",
 }
 return use
