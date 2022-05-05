@@ -20,5 +20,7 @@ local use = {
 	"incsearch",
 	"indent-guides",
 	"nvim-colorizer",
+	"marks",
+	"neogen",
 }
 return use

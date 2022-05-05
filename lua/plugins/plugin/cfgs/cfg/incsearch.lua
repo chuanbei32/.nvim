@@ -2,8 +2,6 @@ vim.cmd([[
 
 	let g:incsearch#auto_nohlsearch = 1
 
-	nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
-
 	map /  <Plug>(incsearch-forward)
 	map ?  <Plug>(incsearch-backward)
 	map g/ <Plug>(incsearch-stay)

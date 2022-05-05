@@ -35,7 +35,8 @@ use = {
 	-- "ludovicchabant/vim-gutentags",
 	-- "preservim/tagbar",
 	"simrat39/symbols-outline.nvim", -- symbols-outline
-	"liuchengxu/vista.vim",
+	-- "liuchengxu/vista.vim",
+	-- "stevearc/aerial.nvim",
 
 	-- 缩进
 	-- "Yggdroot/indentLine", -- indentLine
@@ -52,7 +53,6 @@ use = {
 	-- 模糊搜索
 	-- "Yggdroot/LeaderF",
 	"nvim-telescope/telescope.nvim", -- telescope
-	-- 搜索
 	"haya14busa/incsearch.vim", -- incsearch
 	"easymotion/vim-easymotion",
 	"hrsh7th/vim-eft", -- vim-eft
@@ -75,51 +75,37 @@ use = {
 	"folke/lsp-colors.nvim",
 	-- lsp 加载信息
 	"j-hui/fidget.nvim", -- fidget
-
 	-- Complete
 	"hrsh7th/nvim-cmp",
+	-- "hrsh7th/cmp-cmdline",
 	"hrsh7th/cmp-nvim-lsp",
 	"hrsh7th/cmp-buffer",
 	"hrsh7th/cmp-path",
-	-- "hrsh7th/cmp-cmdline",
-
 	-- Snippet
 	-- "SirVer/ultisnips",
 	-- "honza/vim-snippets",
 	"hrsh7th/cmp-vsnip",
 	"hrsh7th/vim-vsnip",
 	"rafamadriz/friendly-snippets",
-
-	-- Lint
-	"mfussenegger/nvim-lint",
-
-	-- Format
-	"sbdchd/neoformat",
-
-	-- Run
-	"skywind3000/asyncrun.vim",
-
-	-- Tasks
-	"skywind3000/asynctasks.vim",
-
-	-- Debug
-	"puremourning/vimspector",
-
-	-- Test
-	"vim-test/vim-test",
-
 	-- Comment
 	-- "tpope/vim-commentary",
 	-- "suy/vim-context-commentstring",
 	"numToStr/Comment.nvim", -- Comment
 	"JoosepAlviste/nvim-ts-context-commentstring", -- nvim-ts-context-commentstring
 	"vim-scripts/DoxygenToolkit.vim",
-
-	-- Filetype
-	"nathom/filetype.nvim", -- filetype
-
-	-- 撤销
-	"simnalamburt/vim-mundo",
+	"danymat/neogen", -- neogen
+	-- Lint
+	"mfussenegger/nvim-lint",
+	-- Format
+	"sbdchd/neoformat",
+	-- Debug
+	"puremourning/vimspector",
+	-- Test
+	"vim-test/vim-test",
+	-- Run
+	"skywind3000/asyncrun.vim",
+	-- Tasks
+	"skywind3000/asynctasks.vim",
 
 	-- 文本对象
 	"wellle/targets.vim",
@@ -129,26 +115,20 @@ use = {
 	"FooSoft/vim-argwrap",
 	"AndrewRadev/dsf.vim",
 
-	-- 多游标
-	"mg979/vim-visual-multi",
+	"nathom/filetype.nvim", -- filetype「自动文件类型」
+	"simnalamburt/vim-mundo", -- vim-mundo「撤销」
+	"mg979/vim-visual-multi", -- vim-visual-multi「多游标」
+	"chentau/marks.nvim", -- marks「标记」
+	"junegunn/vim-peekaboo", -- vim-peekaboo「寄存器/宏」
+ 	"RRethy/vim-illuminate", -- vim-illuminate「突出显示光标下单词」
+	"airblade/vim-rooter", -- vim-rooter「自动更改工作目录」
+	"tpope/vim-unimpaired", -- vim-unimpaired「映射」
+	"rainbowhxch/accelerated-jk.nvim", -- accelerated-jk「加速 jk 移动速度」
+	"psliwka/vim-smoothie", -- vim-smoothie「翻页动画」
 
 	--
 	"AndrewRadev/tagalong.vim",
 	"alvan/vim-closetag",
-
-	-- 标记
-	"kshenoy/vim-signature",
-
-	-- 寄存器/宏
-	"junegunn/vim-peekaboo",
-
-	-- "tpope/vim-unimpaired",
-	"RRethy/vim-illuminate",
-	"airblade/vim-rooter",
-	"tpope/vim-repeat",
-	"t9md/vim-choosewin",
-	"rainbowhxch/accelerated-jk.nvim", -- accelerated-jk
-	"psliwka/vim-smoothie", -- vim-smoothie
 
 }
 

@@ -199,10 +199,20 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["marks.nvim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/marks.nvim",
+    url = "https://github.com/chentau/marks.nvim"
+  },
   neoformat = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
+  },
+  neogen = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/neogen",
+    url = "https://github.com/danymat/neogen"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -301,11 +311,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-argwrap",
     url = "https://github.com/FooSoft/vim-argwrap"
   },
-  ["vim-choosewin"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-choosewin",
-    url = "https://github.com/t9md/vim-choosewin"
-  },
   ["vim-closetag"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-closetag",
@@ -346,11 +351,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-peekaboo",
     url = "https://github.com/junegunn/vim-peekaboo"
   },
-  ["vim-rainbow"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-rainbow",
-    url = "https://github.com/frazrepo/vim-rainbow"
-  },
   ["vim-repeat"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-repeat",
@@ -360,11 +360,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-rooter",
     url = "https://github.com/airblade/vim-rooter"
-  },
-  ["vim-signature"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-signature",
-    url = "https://github.com/kshenoy/vim-signature"
   },
   ["vim-signify"] = {
     loaded = true,
@@ -405,11 +400,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vimspector",
     url = "https://github.com/puremourning/vimspector"
-  },
-  ["vista.vim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vista.vim",
-    url = "https://github.com/liuchengxu/vista.vim"
   }
 }
 
