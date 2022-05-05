@@ -110,3 +110,16 @@ require("nvim-tree").setup {
     },
   },
 }
+
+-- NvimTreeOpen
+-- NvimTreeClose
+-- NvimTreeFocus
+-- NvimTreeFindFileToggle
+-- NvimTreeResize
+-- NvimTreeCollapse
+-- NvimTreeCollapseKeepBuffers
+vim.cmd([[
+  nnoremap <leader>ntt <cmd>NvimTreeToggle<cr>
+  nnoremap <leader>ntr <cmd>NvimTreeRefresh<cr>
+  nnoremap <leader>ntf <cmd>NvimTreeFindFile<cr>
+]])

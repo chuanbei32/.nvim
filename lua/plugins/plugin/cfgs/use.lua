@@ -10,5 +10,8 @@ local use = {
 	"lspkind",
 	"symbols-outline",
 	"lspsaga",
+	"nvim-ts-rainbow",
+	"fidget",
+	"lsp_signature"
 }
 return use

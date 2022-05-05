@@ -1,83 +1,66 @@
 local use = {}
 
 use = {
-	-- Neovim 函数增强
+	-- Neovim 专属库
 	"nvim-lua/plenary.nvim",
 
+
 	-- 加速插件加载
-	"lewis6991/impatient.nvim",
+	"lewis6991/impatient.nvim", -- impatient
 
+	-- 加载信息
+	"j-hui/fidget.nvim", -- fidget
 
-	"mg979/vim-visual-multi",
-	"tpope/vim-unimpaired",
-	"tpope/vim-surround",
-	"tpope/vim-repeat",
-	"kshenoy/vim-signature",
-	"airblade/vim-rooter",
-	"junegunn/vim-peekaboo",
-	"RRethy/vim-illuminate",
-	"terryma/vim-expand-region",
-	"easymotion/vim-easymotion",
-	"junegunn/vim-easy-align",
-	"t9md/vim-choosewin",
-	"FooSoft/vim-argwrap",
-	"wellle/targets.vim",
-	"AndrewRadev/tagalong.vim",
-	"frazrepo/vim-rainbow",
-	"simnalamburt/vim-mundo",
-	"haya14busa/incsearch.vim",
-	"AndrewRadev/dsf.vim",
-	"rhysd/git-messenger.vim",
-	"dyng/ctrlsf.vim",
-	"alvan/vim-closetag",
+	-- 主题配色
+	"ellisonleao/gruvbox.nvim", -- gruvbox
 
-
-	-- Theme
-	"ellisonleao/gruvbox.nvim",
-
-	-- icons
+	-- 图标
 	"kyazdani42/nvim-web-devicons", -- nvim-web-devicons
 	"onsails/lspkind-nvim", -- lspkind
 
-	-- Status
+	-- 状态栏
 	"nvim-lualine/lualine.nvim", -- lualine
 
-	-- Buffer
+	-- 缓冲区/标签区栏
 	"akinsho/bufferline.nvim", -- bufferline
 
-	-- Dashboard
+	-- 启动页
 	"glepnir/dashboard-nvim", -- dashboard
 
-	-- Explorer
+	-- 资源管理器
 	-- "justinmk/vim-dirvish",
 	"kyazdani42/nvim-tree.lua", -- nvim-tree
 
-	-- Tag
+	-- 标签
 	-- "ludovicchabant/vim-gutentags",
 	-- "preservim/tagbar",
 	"simrat39/symbols-outline.nvim", -- symbols-outline
 
-	-- Indent
+	-- 缩进
 	"Yggdroot/indentLine", -- indentLine
 
-	-- Highlighting
-	"nvim-treesitter/nvim-treesitter",
+	-- 代码高亮
+	"nvim-treesitter/nvim-treesitter", -- nvim-treesitter
+	-- 彩虹括号
+	"p00f/nvim-ts-rainbow", -- nvim-ts-rainbow
 
-	-- Fuzzy Finder
+	-- 模糊搜索
 	-- "Yggdroot/LeaderF",
-	"nvim-telescope/telescope.nvim",
+	"nvim-telescope/telescope.nvim", -- telescope
+	-- 搜索
+	"haya14busa/incsearch.vim",
+	"easymotion/vim-easymotion",
 
 	-- 浮动窗口
 	"akinsho/toggleterm.nvim", -- toggleterm
-
-	-- Filetype
-	"nathom/filetype.nvim",
 
 	-- LSP
 	-- "dense-analysis/ale",
 	"neovim/nvim-lspconfig",
 	"williamboman/nvim-lsp-installer",
-	"tami5/lspsaga.nvim", -- lspsaga
+	"tami5/lspsaga.nvim",
+	"ray-x/lsp_signature.nvim", -- lsp_signature
+	"kosayoda/nvim-lightbulb",
 
 	-- Complete
 	"hrsh7th/nvim-cmp",
@@ -112,6 +95,30 @@ use = {
 	"tpope/vim-commentary",
 	"suy/vim-context-commentstring",
 	"vim-scripts/DoxygenToolkit.vim",
+
+	-- Filetype
+	"nathom/filetype.nvim", -- filetype
+
+	"mg979/vim-visual-multi",
+	"tpope/vim-unimpaired",
+	"tpope/vim-surround",
+	"tpope/vim-repeat",
+	"kshenoy/vim-signature",
+	"airblade/vim-rooter",
+	"junegunn/vim-peekaboo",
+	"RRethy/vim-illuminate",
+	"terryma/vim-expand-region",
+	"junegunn/vim-easy-align",
+	"t9md/vim-choosewin",
+	"FooSoft/vim-argwrap",
+	"wellle/targets.vim",
+	"AndrewRadev/tagalong.vim",
+	"frazrepo/vim-rainbow",
+	"simnalamburt/vim-mundo",
+	"AndrewRadev/dsf.vim",
+	"rhysd/git-messenger.vim",
+	"dyng/ctrlsf.vim",
+	"alvan/vim-closetag",
 }
 
 return use

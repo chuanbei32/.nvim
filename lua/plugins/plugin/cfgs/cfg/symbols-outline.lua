@@ -3,8 +3,8 @@ vim.g.symbols_outline = {
     show_guides = true,
     auto_preview = true,
     position = 'right',
-    relative_width = true,
-    width = 25,
+    relative_width = false,
+    width = 30,
     auto_close = false,
     show_numbers = false,
     show_relative_numbers = false,
@@ -50,3 +50,9 @@ vim.g.symbols_outline = {
         TypeParameter = {icon = "𝙏", hl = "TSParameter"}
     }
 }
+
+vim.cmd([[
+  nnoremap <leader>sot <cmd>SymbolsOutline<cr>
+  nnoremap <leader>soo <cmd>SymbolsOutlineOpen<cr>
+  nnoremap <leader>soc <cmd>SymbolsOutlineClose<cr>
+]])

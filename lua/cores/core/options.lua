@@ -63,8 +63,8 @@ vim.opt.matchtime = 1
 vim.opt.showmatch = true
 
 -- 超时
-vim.opt.timeout = true
-vim.opt.ttimeout = true
+vim.opt.timeout = false
+vim.opt.ttimeout = false
 vim.opt.timeoutlen = 500
 vim.opt.ttimeoutlen = 500
 
@@ -90,7 +90,7 @@ vim.opt.scrolljump = 1
 vim.opt.signcolumn = 'yes'
 
 -- 命令行
-vim.opt.wildmenu = true
+vim.opt.wildmenu = false
 vim.opt.wildmode = 'list:longest,full'
 vim.opt.wildignorecase = true
 vim.opt.showcmd = true
@@ -136,6 +136,7 @@ vim.opt.langremap = true
 vim.opt.langnoremap = true
 vim.opt.shiftround = true
 vim.opt.synmaxcol = 0
+vim.opt.mouse = 'a'
 vim.cmd("set display+=lastline")
 vim.cmd("set iskeyword+=_,$,@,%,#,-")
 vim.cmd("set switchbuf+=usetab,newtab,useopen")

@@ -1,12 +1,12 @@
-require("impatient")
+require("impatient").enable_profile()
 
 local utils = require("tools.utils")
 
 local cfgs = {
     "cores",
     "plugins",
-    "lsps.LSP",
-    "lsps.Complete"
+    "lsps.lsp",
+    "lsps.complete"
 }
 
 for _, cfg in ipairs(cfgs) do
