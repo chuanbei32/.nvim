@@ -1,34 +1,10 @@
-local uses = {
-	-- 主题
-	"ellisonleao/gruvbox.nvim",
-	-- 界面
-	"glepnir/spaceline.vim",
-	-- 文件图标
-	-- "ryanoasis/vim-devicons",
-	"kyazdani42/nvim-web-devicons",
-	-- 语法/语义检查
-	"dense-analysis/ale",
-	-- 异步运行
-	"skywind3000/asyncrun.vim",
-	-- 异步任务
-	"skywind3000/asynctasks.vim",
-	-- 调试
-	"puremourning/vimspector",
-	-- 测试
-	"vim-test/vim-test",
-	-- 代码片段
-	"SirVer/ultisnips",
-	"honza/vim-snippets",
-	-- 注释
-	"vim-scripts/DoxygenToolkit.vim",
-	"tpope/vim-commentary",
-	"suy/vim-context-commentstring",
-	-- 格式化
-	"sbdchd/neoformat",
-	-- Tag
-	"ludovicchabant/vim-gutentags",
-	"alvan/vim-closetag",
-	-- 增强
+local use = {
+	--
+	"nvim-lua/plenary.nvim",
+	--
+	"lewis6991/impatient.nvim",
+
+
 	"mg979/vim-visual-multi",
 	"tpope/vim-unimpaired",
 	"tpope/vim-surround",
@@ -40,19 +16,95 @@ local uses = {
 	"terryma/vim-expand-region",
 	"easymotion/vim-easymotion",
 	"junegunn/vim-easy-align",
-	-- "justinmk/vim-dirvish",
 	"t9md/vim-choosewin",
 	"FooSoft/vim-argwrap",
 	"wellle/targets.vim",
-	"preservim/tagbar",
 	"AndrewRadev/tagalong.vim",
 	"frazrepo/vim-rainbow",
 	"simnalamburt/vim-mundo",
-	"Yggdroot/LeaderF",
-	"Yggdroot/indentLine",
 	"haya14busa/incsearch.vim",
 	"AndrewRadev/dsf.vim",
 	"rhysd/git-messenger.vim",
 	"dyng/ctrlsf.vim",
+	"alvan/vim-closetag",
+
+
+	-- Theme
+	"ellisonleao/gruvbox.nvim",
+
+	-- icons
+	"kyazdani42/nvim-web-devicons",
+	"onsails/lspkind-nvim",
+
+	-- Status
+	"nvim-lualine/lualine.nvim", -- lualine
+
+	-- Buffer
+	"akinsho/bufferline.nvim", -- bufferline
+
+	-- Dashboard
+	"glepnir/dashboard-nvim", -- dashboard
+
+	-- Explorer
+	-- "justinmk/vim-dirvish",
+	"kyazdani42/nvim-tree.lua", -- nvim-tree
+
+	-- Tag
+	-- "ludovicchabant/vim-gutentags",
+	-- "preservim/tagbar",
+	"simrat39/symbols-outline.nvim",
+
+	-- Indent
+	"Yggdroot/indentLine", -- indentLine
+
+	-- Highlighting
+	"nvim-treesitter/nvim-treesitter",
+
+	-- Fuzzy Finder
+	-- "Yggdroot/LeaderF",
+	"nvim-telescope/telescope.nvim",
+
+	-- 浮动窗口
+	"akinsho/toggleterm.nvim", -- toggleterm
+
+	-- Filetype
+	"nathom/filetype.nvim",
+
+	-- LSP
+	-- "dense-analysis/ale",
+	"neovim/nvim-lspconfig",
+	"williamboman/nvim-lsp-installer",
+	"hrsh7th/nvim-cmp",
+	"hrsh7th/cmp-nvim-lsp",
+	"hrsh7th/cmp-buffer",
+	"hrsh7th/cmp-path",
+	"hrsh7th/cmp-cmdline",
+
+	-- Snippet
+	-- "SirVer/ultisnips",
+	-- "honza/vim-snippets",
+	"hrsh7th/cmp-vsnip",
+	"hrsh7th/vim-vsnip",
+	"rafamadriz/friendly-snippets",
+
+	-- Format
+	"sbdchd/neoformat",
+
+	-- Run
+	"skywind3000/asyncrun.vim",
+
+	-- Tasks
+	"skywind3000/asynctasks.vim",
+
+	-- Debug
+	"puremourning/vimspector",
+
+	-- Test
+	"vim-test/vim-test",
+
+	-- Comment
+	"tpope/vim-commentary",
+	"suy/vim-context-commentstring",
+	"vim-scripts/DoxygenToolkit.vim",
 }
-return uses
+return use

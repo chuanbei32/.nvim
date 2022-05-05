@@ -2,7 +2,7 @@ local utils = require("tools.utils")
 
 local prefix = "cores.core."
 
-local cores = {"options", "mappings", "commands", "autocmd", "colors"}
+local cores = {"options", "commands", "mappings", "autocmd"}
 
 for _, core in ipairs(cores) do
     local ok, err = xpcall(require, debug.traceback, prefix .. core)
