@@ -12,6 +12,7 @@ local use = {
 	"lspsaga",
 	"nvim-ts-rainbow",
 	"fidget",
-	"lsp_signature"
+	"lsp_signature",
+	"vim-smoothie",
 }
 return use

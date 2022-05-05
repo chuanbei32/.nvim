@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   ["DoxygenToolkit.vim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/DoxygenToolkit.vim",
@@ -169,6 +174,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/indentLine",
     url = "https://github.com/Yggdroot/indentLine"
   },
+  ["lsp-colors.nvim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
+    url = "https://github.com/folke/lsp-colors.nvim"
+  },
   ["lsp_signature.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
@@ -199,6 +209,16 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-lightbulb"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
+    url = "https://github.com/kosayoda/nvim-lightbulb"
+  },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
+  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
@@ -218,6 +238,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
   ["nvim-ts-rainbow"] = {
     loaded = true,
@@ -281,16 +306,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-closetag",
     url = "https://github.com/alvan/vim-closetag"
   },
-  ["vim-commentary"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-commentary",
-    url = "https://github.com/tpope/vim-commentary"
-  },
-  ["vim-context-commentstring"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-context-commentstring",
-    url = "https://github.com/suy/vim-context-commentstring"
-  },
   ["vim-easy-align"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-easy-align",
@@ -341,6 +356,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-signature",
     url = "https://github.com/kshenoy/vim-signature"
   },
+  ["vim-smoothie"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-smoothie",
+    url = "https://github.com/psliwka/vim-smoothie"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-surround",
@@ -370,6 +390,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vimspector",
     url = "https://github.com/puremourning/vimspector"
+  },
+  ["vista.vim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vista.vim",
+    url = "https://github.com/liuchengxu/vista.vim"
   }
 }
 

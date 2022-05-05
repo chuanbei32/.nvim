@@ -4,7 +4,6 @@ use = {
 	-- Neovim 专属库
 	"nvim-lua/plenary.nvim",
 
-
 	-- 加速插件加载
 	"lewis6991/impatient.nvim", -- impatient
 
@@ -31,10 +30,11 @@ use = {
 	-- "justinmk/vim-dirvish",
 	"kyazdani42/nvim-tree.lua", -- nvim-tree
 
-	-- 标签
+	-- 标签/大纲
 	-- "ludovicchabant/vim-gutentags",
 	-- "preservim/tagbar",
 	"simrat39/symbols-outline.nvim", -- symbols-outline
+	"liuchengxu/vista.vim",
 
 	-- 缩进
 	"Yggdroot/indentLine", -- indentLine
@@ -61,6 +61,7 @@ use = {
 	"tami5/lspsaga.nvim",
 	"ray-x/lsp_signature.nvim", -- lsp_signature
 	"kosayoda/nvim-lightbulb",
+	"folke/lsp-colors.nvim",
 
 	-- Complete
 	"hrsh7th/nvim-cmp",
@@ -75,6 +76,9 @@ use = {
 	"hrsh7th/cmp-vsnip",
 	"hrsh7th/vim-vsnip",
 	"rafamadriz/friendly-snippets",
+
+	-- 代码诊断
+	"mfussenegger/nvim-lint",
 
 	-- Format
 	"sbdchd/neoformat",
@@ -92,13 +96,16 @@ use = {
 	"vim-test/vim-test",
 
 	-- Comment
-	"tpope/vim-commentary",
-	"suy/vim-context-commentstring",
+	-- "tpope/vim-commentary",
+	-- "suy/vim-context-commentstring",
 	"vim-scripts/DoxygenToolkit.vim",
+	"numToStr/Comment.nvim",
+	"JoosepAlviste/nvim-ts-context-commentstring",
 
 	-- Filetype
 	"nathom/filetype.nvim", -- filetype
 
+	"psliwka/vim-smoothie", -- vim-smoothie
 	"mg979/vim-visual-multi",
 	"tpope/vim-unimpaired",
 	"tpope/vim-surround",
