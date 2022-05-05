@@ -1,7 +1,10 @@
-local use = {
-	--
+local use = {}
+
+use = {
+	-- Neovim 函数增强
 	"nvim-lua/plenary.nvim",
-	--
+
+	-- 加速插件加载
 	"lewis6991/impatient.nvim",
 
 
@@ -33,8 +36,8 @@ local use = {
 	"ellisonleao/gruvbox.nvim",
 
 	-- icons
-	"kyazdani42/nvim-web-devicons",
-	"onsails/lspkind-nvim",
+	"kyazdani42/nvim-web-devicons", -- nvim-web-devicons
+	"onsails/lspkind-nvim", -- lspkind
 
 	-- Status
 	"nvim-lualine/lualine.nvim", -- lualine
@@ -52,7 +55,7 @@ local use = {
 	-- Tag
 	-- "ludovicchabant/vim-gutentags",
 	-- "preservim/tagbar",
-	"simrat39/symbols-outline.nvim",
+	"simrat39/symbols-outline.nvim", -- symbols-outline
 
 	-- Indent
 	"Yggdroot/indentLine", -- indentLine
@@ -74,6 +77,9 @@ local use = {
 	-- "dense-analysis/ale",
 	"neovim/nvim-lspconfig",
 	"williamboman/nvim-lsp-installer",
+	"tami5/lspsaga.nvim", -- lspsaga
+
+	-- Complete
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
 	"hrsh7th/cmp-buffer",
@@ -107,4 +113,5 @@ local use = {
 	"suy/vim-context-commentstring",
 	"vim-scripts/DoxygenToolkit.vim",
 }
+
 return use

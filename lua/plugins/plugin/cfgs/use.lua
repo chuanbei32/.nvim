@@ -6,5 +6,9 @@ local use = {
 	"telescope",
 	"filetype",
 	"nvim-tree",
+	"nvim-web-devicons",
+	"lspkind",
+	"symbols-outline",
+	"lspsaga",
 }
 return use
