@@ -58,7 +58,7 @@ use = {
         "petertriho/nvim-scrollbar", -- nvim-scrollbar “ 滚动条
         "rcarriga/nvim-notify", -- nvim-notify ” 通知
         "folke/todo-comments.nvim", -- todo-comments “ todo
-        "folke/which-key.nvim", -- which-key.nvim ”
+        "folke/which-key.nvim", -- which-key ”
         "ellisonleao/gruvbox.nvim",                    -- gruvbox ” 主题配色
         "nvim-lualine/lualine.nvim",                   -- lualine ” 状态栏
         "akinsho/bufferline.nvim",                     -- bufferline ” 缓冲区/标签区栏
@@ -91,7 +91,10 @@ use = {
         "williamboman/nvim-lsp-installer",             -- nvim-lsp-installer
 
         -- debug ” 调试
-        "puremourning/vimspector",                     -- vimspector
+        -- "puremourning/vimspector",                     -- vimspector、
+        "mfussenegger/nvim-dap", -- nvim-dap
+        "theHamsta/nvim-dap-virtual-text", -- nvim-dap-virtual-text
+        "rcarriga/nvim-dap-ui", -- nvim-dap-ui
 
         -- test ” 测试
         "vim-test/vim-test",                           -- vim-test

@@ -54,13 +54,37 @@ local function setup_plugins()
       event = "VimEnter",
     })
 
-    for _, plugin in ipairs(require("plugins.plugin.packer.use")) do
-      use(plugin)
+    local function split(str,reps)
+        local resultStrList = {}
+        string.gsub(str,'[^'..reps..']+',function (w)
+            table.insert(resultStrList,w)
+        end)
+        return resultStrList
     end
 
-    local ok, err = xpcall(require, debug.traceback, "plugins.plugin.cfgs")
-    if not ok then
-      utils.errorL(err)
+    local io = require("io")
+
+    for _, plugin in ipairs(require("plugins.plugin.packer.use")) do
+      use(plugin)
+
+      local cfg = split(plugin, '/')[2]
+
+      local ii = 0
+      ::isrequire::
+      local require_name = "plugins/plugin/cfgs." .. cfg
+      local ok, err = xpcall(require, debug.traceback, require_name)
+      if not ok then
+        -- 以附加的方式打开只写文件
+        file = io.open(require_name, "a")
+        -- 设置默认输出文件为 test.lua
+        io.output(file)
+        -- 在文件最后一行添加 Lua 注释
+        io.write("-- ..")
+        -- 关闭打开的文件
+        io.close(file)
+        -- utils.errorL(err)
+        goto isrequire
+      end
     end
   end)
 end
