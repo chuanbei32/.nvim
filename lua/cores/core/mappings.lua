@@ -14,11 +14,11 @@ end
 vim.g.mapleader = "\\"
 
 -- {{
-  map('n', '<tab>', 'V>')
-  map('v', '<tab>', '<gv')
+  map('n', '<tab>', 'V>', {noremap = false})
+  map('v', '<tab>', '>gv', {noremap = false})
 
-  map('n', '<s-tab>', 'V<')
-  map('v', '<tab>', '>gv')
+  map('n', '<s-tab>', 'V<', {noremap = false})
+  map('v', '<s-tab>', '<gv', {noremap = false})
 
   map('n', 'gh', 'g^')
   map('n', 'gH', '^')
