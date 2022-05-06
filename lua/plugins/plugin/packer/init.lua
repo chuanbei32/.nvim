@@ -62,28 +62,31 @@ local function setup_plugins()
         return resultStrList
     end
 
-    local io = require("io")
-
     for _, plugin in ipairs(require("plugins.plugin.packer.use")) do
       use(plugin)
 
-      local cfg = split(plugin, '/')[2]
+      local cfg = split(split(plugin, '/')[2], '.')[1]
 
-      local ii = 0
-      ::isrequire::
-      local require_name = "plugins/plugin/cfgs." .. cfg
-      local ok, err = xpcall(require, debug.traceback, require_name)
+      local mark = 0
+      local path = vim.fn.stdpath("config") .. "/lua/plugins/plugin/cfgs/"
+      ::continue::
+      if mark == 2 then
+        utils.errorL('error')
+      end
+      local ok, err = xpcall(require, debug.traceback, "plugins.plugin.cfgs." .. cfg)
+      -- print(err)
       if not ok then
-        -- 以附加的方式打开只写文件
-        file = io.open(require_name, "a")
-        -- 设置默认输出文件为 test.lua
+        pcall(os.execute, "mkdir -p " .. path .. path)
+        -- local file = pcall(io.open, path .. cfg .. '.lua', "a")
+        local file = io.open(path .. cfg .. '.lua', "a")
+        print(path .. cfg .. '.lua')
+        -- print(file)
         io.output(file)
-        -- 在文件最后一行添加 Lua 注释
-        io.write("-- ..")
-        -- 关闭打开的文件
+        -- io.write("")
         io.close(file)
         -- utils.errorL(err)
-        goto isrequire
+        mark = mark + 1
+        goto continue
       end
     end
   end)

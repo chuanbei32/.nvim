@@ -9,9 +9,10 @@ use = {
     -- LuaCacheProfile 查看分析数据
     "lewis6991/impatient.nvim",                        -- impatient “ 加速插件加载
 
+    "nvim-treesitter/nvim-treesitter",             -- nvim-treesitter ” 代码高亮
 
     -- {{
-    "windwp/nvim-spectre", -- nvim-spectre ” 模糊查找/搜索替换
+    "windwp/nvim-spectre",                             -- nvim-spectre ” 模糊查找/搜索替换
     -- "dyng/ctrlsf.vim",                                 -- ctrlsf ” 模糊查找/搜索替换
     "nvim-telescope/telescope.nvim",                   -- telescope “ 模糊查找/搜索
     "kevinhwang91/nvim-hlslens",                       -- nvim-hlslens ” 搜索高亮
@@ -52,19 +53,18 @@ use = {
         -- "ludovicchabant/vim-gutentags" -- vim-gutentags
 
         -- "AndrewRadev/switch.vim" -- switch
-        "Pocco81/AutoSave.nvim", -- AutoSave ” 自动保存
+        "Pocco81/AutoSave.nvim",                       -- AutoSave ” 自动保存
         -- "ethanholz/nvim-lastplace", -- nvim-lastplace “ 自动定位到上次离开位置
         -- "rmagatti/auto-session", -- auto-session ” 自动保存 session
-        "petertriho/nvim-scrollbar", -- nvim-scrollbar “ 滚动条
-        "rcarriga/nvim-notify", -- nvim-notify ” 通知
-        "folke/todo-comments.nvim", -- todo-comments “ todo
-        "folke/which-key.nvim", -- which-key ”
+        "petertriho/nvim-scrollbar",                   -- nvim-scrollbar “ 滚动条
+        "rcarriga/nvim-notify",                        -- nvim-notify ” 通知
+        "folke/todo-comments.nvim",                    -- todo-comments “ todo
+        -- "folke/which-key.nvim", -- which-key ”
         "ellisonleao/gruvbox.nvim",                    -- gruvbox ” 主题配色
         "nvim-lualine/lualine.nvim",                   -- lualine ” 状态栏
         "akinsho/bufferline.nvim",                     -- bufferline ” 缓冲区/标签区栏
         "glepnir/dashboard-nvim",                      -- dashboard ” 启动页/仪表盘
         "kyazdani42/nvim-web-devicons",                -- nvim-web-devicons ” 文件/文件夹图标
-        "nvim-treesitter/nvim-treesitter",             -- nvim-treesitter ” 代码高亮
         "p00f/nvim-ts-rainbow",                        -- nvim-ts-rainbow ” 彩虹括号
         "windwp/nvim-autopairs",                       -- nvim-autopairs ” 括号补全
         "norcalli/nvim-colorizer.lua",                 -- nvim-colorizer ” 颜色
@@ -92,9 +92,9 @@ use = {
 
         -- debug ” 调试
         -- "puremourning/vimspector",                     -- vimspector、
-        "mfussenegger/nvim-dap", -- nvim-dap
-        "theHamsta/nvim-dap-virtual-text", -- nvim-dap-virtual-text
-        "rcarriga/nvim-dap-ui", -- nvim-dap-ui
+        "mfussenegger/nvim-dap",                       -- nvim-dap
+        "theHamsta/nvim-dap-virtual-text",             -- nvim-dap-virtual-text
+        "rcarriga/nvim-dap-ui",                        -- nvim-dap-ui
 
         -- test ” 测试
         "vim-test/vim-test",                           -- vim-test
@@ -123,6 +123,7 @@ use = {
 
         -- lint ” 代码诊断
         "mfussenegger/nvim-lint",                      -- nvim-lint
+
     -- }}
 }
 
