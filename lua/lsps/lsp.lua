@@ -14,6 +14,7 @@ local servers = {
   html = require("lsps.lsp.html"),
   sql = require("lsps.lsp.sql"),
   vue = require("lsps.lsp.vue"),
+  vimls = require("lsps.lsp.vimscript"),
 }
 
 -- 自动安装 LanguageServers
