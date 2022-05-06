@@ -4,14 +4,8 @@ use = {
 
     "rcarriga/nvim-notify",                            -- 消息通知模块
 
-    -- LuaCacheClear 删除加载的缓存并删除缓存文件并且下次加载 Neovim 时将创建一个新的缓存文件
-    -- LuaCacheLog 查看日志
-    -- LuaCacheProfile 查看分析数据
     "lewis6991/impatient.nvim",                        -- 缓存插件字节码
 
-
-
-    -- 前置依赖插件
     "nvim-lua/plenary.nvim",                           -- 专用模块
 
     "akinsho/toggleterm.nvim",                         -- 窗口浮动
@@ -26,7 +20,7 @@ use = {
     "skywind3000/asynctasks.vim",                      -- 异步任务
 
     "simrat39/symbols-outline.nvim",                   -- 标签/大纲
-    -- "preservim/tagbar",                                -- 标签/大纲
+    "preservim/tagbar",                                -- 标签/大纲
 
     "kyazdani42/nvim-tree.lua",                        -- 文件/文件夹管理器
 
@@ -66,7 +60,7 @@ use = {
     "lewis6991/gitsigns.nvim",
     "sindrets/diffview.nvim",
 
-    -- "ludovicchabant/vim-gutentags",                    -- 自动生成 tags
+    "ludovicchabant/vim-gutentags",                    -- 自动生成 tags
     -- "airblade/vim-rooter",                             -- 更改工作目录
     "Pocco81/AutoSave.nvim",                           -- 自动保存文件
     -- "rmagatti/auto-session",                           -- 自动保存会话

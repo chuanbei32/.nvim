@@ -326,6 +326,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/tagalong.vim",
     url = "https://github.com/AndrewRadev/tagalong.vim"
   },
+  tagbar = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/tagbar",
+    url = "https://github.com/preservim/tagbar"
+  },
   ["targets.vim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/targets.vim",
@@ -370,6 +375,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-expand-region",
     url = "https://github.com/terryma/vim-expand-region"
+  },
+  ["vim-gutentags"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-gutentags",
+    url = "https://github.com/ludovicchabant/vim-gutentags"
   },
   ["vim-illuminate"] = {
     loaded = true,

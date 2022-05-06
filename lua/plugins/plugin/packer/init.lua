@@ -66,6 +66,7 @@ local function setup_plugins()
     for _, plugin in ipairs(plugins) do
       use(plugin)
     end
+
     for _, plugin in ipairs(plugins) do
       local mark = 0
       local cfg = split(split(plugin, '/')[2], '.')[1]
