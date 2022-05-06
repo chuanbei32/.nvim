@@ -5,7 +5,7 @@ require("nvim-tree").setup {
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
   ignore_buffer_on_setup = false,
-  open_on_setup = true,
+  open_on_setup = false,
   open_on_setup_file = false,
   open_on_tab = false,
   sort_by = "name",
@@ -119,7 +119,11 @@ require("nvim-tree").setup {
 -- NvimTreeCollapse
 -- NvimTreeCollapseKeepBuffers
 vim.cmd([[
+  let g:nvim_tree_highlight_opened_files = 3
+
   nnoremap <leader>ntt <cmd>NvimTreeToggle<cr>
   nnoremap <leader>ntr <cmd>NvimTreeRefresh<cr>
   nnoremap <leader>ntf <cmd>NvimTreeFindFile<cr>
+
+  autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
 ]])

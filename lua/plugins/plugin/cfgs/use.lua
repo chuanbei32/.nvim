@@ -17,10 +17,15 @@ local use = {
 	"nvim-ts-context-commentstring",
 	"accelerated-jk",
 	"vim-eft",
-	"incsearch",
 	"indent-guides",
 	"nvim-colorizer",
 	"marks",
 	"neogen",
+	"git-blame",
+	"gitsigns",
+	"nvim-autopairs",
+	"hop",
+	"nvim-hlslens",
+	"vim-easy-align",
 }
 return use
