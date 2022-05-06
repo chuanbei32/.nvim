@@ -8,8 +8,6 @@ end
 
 local undo_dir = vim.fn.stdpath("cache") .. "/undo"
 local undo_stat = pcall(os.execute, "mkdir -p " .. undo_dir)
--- local has_persist = vim.fn.has("persistent_undo")
--- if undo_stat and has_persist == 1 then
 if undo_stat then
     vim.opt.undofile = true
     vim.opt.undodir = undo_dir
@@ -110,6 +108,11 @@ vim.opt.incsearch = true
 vim.opt.wrapscan = false
 vim.cmd("set path+=**")
 
+-- session
+
+vim.opt.sessionoptions = "blank,buffers,curdir,folds,help,options,tabpages,winsize,terminal"
+-- shada
+-- vim.opt.shada
 
 vim.opt.suffixes = '.backup'
 vim.opt.magic = true

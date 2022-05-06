@@ -17,14 +17,14 @@ use = {
     "akinsho/toggleterm.nvim",                         -- 窗口浮动
     "nvim-treesitter/nvim-treesitter",                 -- 代码高亮
 
-
+    "folke/which-key.nvim",                            --
 
     "skywind3000/asyncrun.vim",                        -- 异步运行
 
     "skywind3000/asynctasks.vim",                      -- 异步任务
 
     "simrat39/symbols-outline.nvim",                   -- 标签/大纲
-    -- "preservim/tagbar",                   -- 标签/大纲
+    -- "preservim/tagbar",                                -- 标签/大纲
 
     "kyazdani42/nvim-tree.lua",                        -- 文件/文件夹管理器
 
@@ -52,6 +52,7 @@ use = {
     "terryma/vim-expand-region",
     "mg979/vim-visual-multi",                          -- 多游标
 
+    -- "AndrewRadev/switch.vim",                          --
     "tpope/vim-surround",
     "AndrewRadev/dsf.vim",
     "AndrewRadev/tagalong.vim",                        -- 配对 html/xml 标签
@@ -65,13 +66,12 @@ use = {
     "lewis6991/gitsigns.nvim",
     "sindrets/diffview.nvim",
 
-    -- "AndrewRadev/switch.vim" -- switch
-    -- "folke/which-key.nvim", -- which-key ”
-    -- "ludovicchabant/vim-gutentags" -- 自动生成 tags
-    "Pocco81/AutoSave.nvim",                           -- 自动保存
-    "airblade/vim-rooter",                             -- 更改工作目录
-    -- "rmagatti/auto-session", -- 自动保存 session
-    -- "ethanholz/nvim-lastplace", -- 自动定位到上次离开位置
+    -- "ludovicchabant/vim-gutentags",                    -- 自动生成 tags
+    -- "airblade/vim-rooter",                             -- 更改工作目录
+    "Pocco81/AutoSave.nvim",                           -- 自动保存文件
+    -- "rmagatti/auto-session",                           -- 自动保存会话
+    -- "rmagatti/session-lens",
+    -- "ethanholz/nvim-lastplace",                        -- 自动定位到上次离开位置
 
 
     "tpope/vim-unimpaired",                            -- 映射增强
