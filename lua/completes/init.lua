@@ -1,10 +1,10 @@
 local utils = require("tools.utils")
 
-local lsps = {
-    "lsps.lsp"
+local completes = {
+    "completes.complete"
 }
 
-for _, cfg in ipairs(lsps) do
+for _, cfg in ipairs(completes) do
     local ok, err = xpcall(require, debug.traceback, cfg)
     if not ok then
         utils.errorL(err)

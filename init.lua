@@ -6,6 +6,7 @@ local cfgs = {
     "basics",
     "plugins",
     "lsps",
+    "completes",
 }
 
 for _, cfg in ipairs(cfgs) do

@@ -34,7 +34,7 @@ cmp.setup {
     }),
 
   -- 快捷键
-  mapping = require'lsps.completeKey'.cmp(cmp),
+  mapping = require'completes.completeKey'.cmp(cmp),
   -- 使用lspkind-nvim显示类型图标
   formatting = {
     format = lspkind.cmp_format({
