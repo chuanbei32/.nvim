@@ -1,5 +1,6 @@
 require("toggleterm").setup({
-    size = 12
+    size = 12,
+    shading_factor = 3
 })
 
 vim.cmd([[

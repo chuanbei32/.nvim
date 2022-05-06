@@ -54,12 +54,12 @@ vim.g.mapleader = "\\"
   -- shell
   map('n', '<leader>sh', '<cmd>shell<cr>')
 
-  -- viminfo
-  map('n', '<leader>vs', '<cmd>wviminfo<cr>')
+  -- -- viminfo
+  -- map('n', '<leader>vs', '<cmd>wviminfo<cr>')
 
-  -- session
-  map('n', '<leader>ss', ':mksession! ~/.vim/__session/.vim<left><left><left><left>')
-  map('n', '<leader>sr', ':source ~/.vim/__session/')
+  -- -- session
+  -- map('n', '<leader>ss', ':mksession! ~/.vim/__session/.vim<left><left><left><left>')
+  -- map('n', '<leader>sr', ':source ~/.vim/__session/')
 
   -- mark
 
@@ -135,7 +135,6 @@ vim.g.mapleader = "\\"
   map('n', '<leader>8', '8gt<cr>')
   map('n', '<leader>9', '9gt<cr>')
   map('n', '<leader>0', '10gt<cr>')
-
 
   -- quickfix
   map('n', '<leader>qo', '<cmd>copen 10<cr>')

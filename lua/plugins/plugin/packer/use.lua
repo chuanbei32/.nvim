@@ -35,7 +35,7 @@ use = {
 
     -- 版本控制「git」
     "lewis6991/gitsigns.nvim",                         -- gitsigns
-    "sindrets/diffview.nvim",
+    "sindrets/diffview.nvim",                          -- diffview
 
     -- {{
         "ellisonleao/gruvbox.nvim",                    -- gruvbox ” 主题配色
@@ -91,19 +91,19 @@ use = {
         "sbdchd/neoformat",                            -- neoformat
 
         -- completion ” 自动完成
-        "hrsh7th/nvim-cmp",
-        "hrsh7th/cmp-nvim-lsp",
-        "hrsh7th/cmp-buffer",
-        "hrsh7th/cmp-path",
-        -- "hrsh7th/cmp-cmdline",
+        "hrsh7th/nvim-cmp",                            -- nvim-cmp
+        "hrsh7th/cmp-nvim-lsp",                        -- cmp-nvim-lsp
+        "hrsh7th/cmp-buffer",                          -- cmp-buffer
+        "hrsh7th/cmp-path",                            -- cmp-path
+        -- "hrsh7th/cmp-cmdline", -- cmp-cmdline
 
         -- snippet ” 代码片段
-        "hrsh7th/cmp-vsnip",
-        "hrsh7th/vim-vsnip",
-        "rafamadriz/friendly-snippets",
+        "hrsh7th/cmp-vsnip",                           -- cmp-vsnip
+        "hrsh7th/vim-vsnip",                           -- vim-vsnip
+        "rafamadriz/friendly-snippets",                -- friendly-snippets
 
         -- lint ” 代码诊断
-        "mfussenegger/nvim-lint",
+        "mfussenegger/nvim-lint",                      -- nvim-lint
 
         --  标签/大纲
         "simrat39/symbols-outline.nvim",               -- symbols-outline
