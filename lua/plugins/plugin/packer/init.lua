@@ -63,20 +63,21 @@ local function setup_plugins()
     end
 
     for _, plugin in ipairs(require("plugins.plugin.packer.use")) do
+      -- print(type(plugin))
       use(plugin)
 
-      local cfg = split(split(plugin, '/')[2], '.')[1]
-
       local mark = 0
+      local cfg = split(split(plugin, '/')[2], '.')[1]
       local path = vim.fn.stdpath("config") .. "/lua/plugins/plugin/cfgs/"
+
       ::continue::
       if mark == 2 then
-        utils.errorL('error')
+        exit('...')
       end
       local ok, err = xpcall(require, debug.traceback, "plugins.plugin.cfgs." .. cfg)
-      -- print(err)
       if not ok then
-        pcall(os.execute, "mkdir -p " .. path .. path)
+        mark = mark + 1
+        pcall(os.execute, "mkdir -p " .. path)
         -- local file = pcall(io.open, path .. cfg .. '.lua', "a")
         local file = io.open(path .. cfg .. '.lua', "a")
         print(path .. cfg .. '.lua')
@@ -85,7 +86,6 @@ local function setup_plugins()
         -- io.write("")
         io.close(file)
         -- utils.errorL(err)
-        mark = mark + 1
         goto continue
       end
     end
