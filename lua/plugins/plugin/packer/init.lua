@@ -62,14 +62,14 @@ local function setup_plugins()
         return resultStrList
     end
 
-    for _, plugin in ipairs(require("plugins.plugin.packer.use")) do
-      -- print(type(plugin))
+    local plugins = require("plugins.plugin.packer.use")
+    for _, plugin in ipairs(plugins) do
       use(plugin)
-
+    end
+    for _, plugin in ipairs(plugins) do
       local mark = 0
       local cfg = split(split(plugin, '/')[2], '.')[1]
       local path = vim.fn.stdpath("config") .. "/lua/plugins/plugin/cfgs/"
-
       ::continue::
       if mark == 2 then
         exit('...')

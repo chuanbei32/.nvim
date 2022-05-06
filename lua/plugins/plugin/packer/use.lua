@@ -16,6 +16,8 @@ use = {
 
     "akinsho/toggleterm.nvim",                         -- 窗口浮动
     "nvim-treesitter/nvim-treesitter",                 -- 代码高亮
+    "kyazdani42/nvim-web-devicons",                    -- 文件/文件夹图标
+
 
     "folke/which-key.nvim",                            --
 
@@ -35,8 +37,6 @@ use = {
 
 
     "ellisonleao/gruvbox.nvim",                        -- 主题配色
-
-    "kyazdani42/nvim-web-devicons",                    -- 文件/文件夹图标
 
     "nvim-lualine/lualine.nvim",                       -- 状态栏
 
