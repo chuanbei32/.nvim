@@ -1,14 +1,11 @@
-require("impatient").enable_profile()
-
 local utils = require("tools.utils")
 
-local cfgs = {
-    "basics",
-    "plugins",
-    "lsps",
+local lsps = {
+    "lsps.lsp",
+    "lsps.complete"
 }
 
-for _, cfg in ipairs(cfgs) do
+for _, cfg in ipairs(lsps) do
     local ok, err = xpcall(require, debug.traceback, cfg)
     if not ok then
         utils.errorL(err)

@@ -11,35 +11,34 @@ use = {
 
 
     -- {{
-    "dyng/ctrlsf.vim",                                 -- ctrlsf ” 模糊查找/搜索替换
+    "windwp/nvim-spectre", -- nvim-spectre ” 模糊查找/搜索替换
+    -- "dyng/ctrlsf.vim",                                 -- ctrlsf ” 模糊查找/搜索替换
     "nvim-telescope/telescope.nvim",                   -- telescope “ 模糊查找/搜索
     "kevinhwang91/nvim-hlslens",                       -- nvim-hlslens ” 搜索高亮
     "hrsh7th/vim-eft",                                 -- vim-eft “ f/t 查找/搜索增强
     "phaazon/hop.nvim",                                -- hop ” 跳转
-	-- }}
+    -- }}
 
-	-- {{
+    -- {{
     -- 文本对象
     "wellle/targets.vim",
     "terryma/vim-expand-region",
-
 
     "tpope/vim-surround",
     "AndrewRadev/dsf.vim",
     "AndrewRadev/tagalong.vim",                        -- tagalong ” 配对 html/xml 标签
     "alvan/vim-closetag",                              -- closetag ” 关闭 html/xml 标签
 
-    --
-	"mg979/vim-visual-multi",                          -- vim-visual-multi ” 多游标
+    "mg979/vim-visual-multi",                          -- vim-visual-multi ” 多游标
     "junegunn/vim-easy-align",                         -- vim-easy-align “ 对齐
     "FooSoft/vim-argwrap",                             -- vim-argwrap ”
-	-- }}
+    -- }}
 
     -- 版本控制 {{
-	-- git
+    -- git
     "lewis6991/gitsigns.nvim",                         -- gitsigns
     "sindrets/diffview.nvim",                          -- diffview
-	-- }}
+    -- }}
 
     -- {{
         "kyazdani42/nvim-tree.lua",                    -- nvim-tree ” 文件/文件夹管理器
@@ -49,7 +48,17 @@ use = {
         "simnalamburt/vim-mundo",                      -- vim-mundo ” 撤销
         "junegunn/vim-peekaboo",                       -- vim-peekaboo ” 寄存器/宏
         "simrat39/symbols-outline.nvim",               -- symbols-outline “ 标签/大纲
+        -- "preservim/tagbar" -- tagbar
+        -- "ludovicchabant/vim-gutentags" -- vim-gutentags
 
+        -- "AndrewRadev/switch.vim" -- switch
+        "Pocco81/AutoSave.nvim", -- AutoSave ” 自动保存
+        -- "ethanholz/nvim-lastplace", -- nvim-lastplace “ 自动定位到上次离开位置
+        -- "rmagatti/auto-session", -- auto-session ” 自动保存 session
+        "petertriho/nvim-scrollbar", -- nvim-scrollbar “ 滚动条
+        "rcarriga/nvim-notify", -- nvim-notify ” 通知
+        "folke/todo-comments.nvim", -- todo-comments “ todo
+        "folke/which-key.nvim", -- which-key.nvim ”
         "ellisonleao/gruvbox.nvim",                    -- gruvbox ” 主题配色
         "nvim-lualine/lualine.nvim",                   -- lualine ” 状态栏
         "akinsho/bufferline.nvim",                     -- bufferline ” 缓冲区/标签区栏
@@ -91,7 +100,7 @@ use = {
         "numToStr/Comment.nvim",                       -- Comment
         "JoosepAlviste/nvim-ts-context-commentstring", -- nvim-ts-context-commentstring
 
-		-- docComment ” 文档注释
+        -- docComment ” 文档注释
         "danymat/neogen",                              -- neogen
 
         -- format ” 格式化

@@ -28,5 +28,8 @@ local use = {
     "nvim-hlslens",
     "vim-easy-align",
 	"toggleterm",
+    "AutoSave",
+    "nvim-scrollbar",
+    "todo-comments"
 }
 return use

@@ -35,6 +35,7 @@ vim.opt.printencoding = 'utf-8'
 vim.opt.fileencodings = 'utf-8,gbk,gb18030,ucs-bom,big5,euc-jp,latin1'
 
 -- 缩进
+vim.cmd([[ filetype plugin on ]])
 vim.opt.autoindent = true
 vim.opt.expandtab = true
 vim.opt.smartindent = true
@@ -150,6 +151,7 @@ vim.cmd("set viewoptions-=vim.options")
 vim.cmd("set nrformats-=octal")
 
 --
+vim.cmd([[ syntax enable on ]])
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 vim.cmd("colorscheme gruvbox")
