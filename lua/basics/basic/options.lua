@@ -91,7 +91,7 @@ vim.opt.scrolljump = 1
 vim.opt.signcolumn = 'yes'
 
 -- 命令行
-vim.opt.wildmenu = true
+vim.opt.wildmenu = false
 vim.opt.wildmode = 'list,longest,full'
 vim.opt.wildignorecase = true
 vim.opt.wildignorecase = false
@@ -137,7 +137,7 @@ vim.opt.langremap = true
 vim.opt.langnoremap = true
 vim.opt.shiftround = true
 vim.opt.synmaxcol = 0
-vim.opt.mouse = 'a'
+-- vim.opt.mouse = 'a'
 vim.cmd([[ set listchars=tab:\\|\\,trail:.,extends:>,precedes:< ]])
 vim.cmd("set display+=lastline")
 vim.cmd("set iskeyword+=_,$,@,%,#,-")
