@@ -1,20 +1,24 @@
 local dependency = {
+
     "nvim-lua/plenary.nvim",                               -- 专用模块
     "kyazdani42/nvim-web-devicons",                        -- 文件/文件夹图标
 }
 
-local enhance = {
+local system = {
 
-    "rcarriga/nvim-notify",                                -- 消息通知模块
-    "tweekmonster/startuptime.vim",                        -- 启动时间统计
-    "lewis6991/impatient.nvim",                            -- 缓存插件字节码
+    "rcarriga/nvim-notify",                                -- 消息通知
+    "tweekmonster/startuptime.vim",                        -- 启动时间
+
+    "lewis6991/impatient.nvim",                            -- 插件缓存
+
+    "nathom/filetype.nvim",                                -- 文件类型
 }
 
 local ui = {
 
     "ellisonleao/gruvbox.nvim",                            -- 主题配色
-    "psliwka/vim-smoothie",                                -- 翻页动画
-    "petertriho/nvim-scrollbar",                           -- 滚动条
+    -- "psliwka/vim-smoothie",                                -- 翻页动画
+    -- "petertriho/nvim-scrollbar",                           -- 滚动条
     "kevinhwang91/nvim-hlslens",                           -- 搜索高亮
     "folke/todo-comments.nvim",                            -- Todo 高亮
     "RRethy/vim-illuminate",                               -- 高亮光标下单词
@@ -65,13 +69,13 @@ local feature = {
     "junegunn/vim-peekaboo",                               -- 寄存器/宏
     {
         "windwp/nvim-spectre",                             -- 模糊查找/搜索替换
-        require = {
+        requires = {
             "nvim-lua/plenary.nvim"
         }
     },
     {
         "nvim-telescope/telescope.nvim",                   -- 模糊查找/搜索替换
-        require = {
+        requires = {
             "nvim-lua/plenary.nvim"
         }
     },
@@ -93,7 +97,12 @@ local feature = {
 
     -- git
     "lewis6991/gitsigns.nvim",
-    "sindrets/diffview.nvim",
+    {
+        "sindrets/diffview.nvim",
+        requires = {
+            "nvim-lua/plenary.nvim"
+        }
+    },
 
     -- "Pocco81/AutoSave.nvim",                            -- 自动保存文件
     -- "airblade/vim-rooter",                              -- 更改工作目录
@@ -103,9 +112,6 @@ local feature = {
 }
 
 local lsp = {
-
-    --
-    "nathom/filetype.nvim",                                -- 文件类型
 
     "j-hui/fidget.nvim",                                   -- lsp 加载信息
     "ray-x/lsp_signature.nvim",                            -- lsp 函数签名
@@ -119,10 +125,11 @@ local lsp = {
     "williamboman/nvim-lsp-installer",                     --
 
     -- 调试
+    -- "puremourning/vimspector",
     "mfussenegger/nvim-dap",                               --
     {
         "theHamsta/nvim-dap-virtual-text",                 --
-        require = {
+        requires = {
             "mfussenegger/nvim-dap",
             {
                 "nvim-treesitter/nvim-treesitter",
@@ -132,7 +139,7 @@ local lsp = {
     },
     {
         "rcarriga/nvim-dap-ui",                            --
-        require = {
+        requires = {
             "mfussenegger/nvim-dap",
         }
     },
@@ -168,7 +175,7 @@ local lsp = {
 
 return {
     dependency,
-    enhance,
+    system,
     ui,
     feature,
     lsp,

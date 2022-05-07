@@ -111,6 +111,8 @@ require("nvim-tree").setup {
   },
 }
 
+-- autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
+
 -- NvimTreeOpen
 -- NvimTreeClose
 -- NvimTreeFocus
@@ -125,5 +127,4 @@ vim.cmd([[
   nnoremap <leader>ntr <cmd>NvimTreeRefresh<cr>
   nnoremap <leader>ntf <cmd>NvimTreeFindFile<cr>
 
-  autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
 ]])

@@ -269,11 +269,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
   },
-  ["nvim-scrollbar"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-scrollbar",
-    url = "https://github.com/petertriho/nvim-scrollbar"
-  },
   ["nvim-spectre"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-spectre",
@@ -400,11 +395,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-peekaboo",
     url = "https://github.com/junegunn/vim-peekaboo"
-  },
-  ["vim-smoothie"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-smoothie",
-    url = "https://github.com/psliwka/vim-smoothie"
   },
   ["vim-surround"] = {
     loaded = true,

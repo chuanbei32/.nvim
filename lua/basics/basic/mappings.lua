@@ -13,6 +13,7 @@ end
 
 vim.g.mapleader = "\\"
 
+-- map('n', '<esc>', '<cmd>nohlsearch<cr><esc>')
 
 map('n', '<tab>', 'V>', {noremap = false})
 map('v', '<tab>', '>gv', {noremap = false})
@@ -49,12 +50,12 @@ map('n', '<leader>tm', '<cmd>terminal<cr>')
 map('n', '<leader>sh', '<cmd>shell<cr>')
 
 -- shada
--- local shada_dir = vim.fn.stdpath("cache") .. "/shada"
+-- local shada_dir = vim.fn.stdpath("data") .. "/shada"
 -- map('n', '<leader>sds', '<cmd>wshada!<cr>')
 -- map('n', '<leader>sdr', '<cmd>rshada!<cr>')
 
 -- session
--- local session_dir = vim.fn.stdpath("cache") .. "/session"
+-- local session_dir = vim.fn.stdpath("data") .. "/session"
 -- map('n', '<leader>ss', ':mksession! ~/.vim/__session/.vim<left><left><left><left>')
 -- map('n', '<leader>sr', ':source ~/.vim/__session/')
 
