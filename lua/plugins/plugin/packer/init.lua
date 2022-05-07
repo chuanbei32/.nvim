@@ -62,21 +62,22 @@ local function setup_plugins()
         end)
         return resultStrList
     end
-    todoPlugin = function(plugin)
-      print(type(plugin))
+    local function todoPlugin(plugin)
+      -- print(type(plugin))
       -- print(type(plugin) == 'table')
       if type(plugin) == 'table' then
         for _, tmp in ipairs(plugin) do
-            print(type(tmp))
-            print(tmp)
+            -- print(type(tmp))
+            -- print(tmp)
             todoPlugin(tmp)
         end
       else
-        print(string.find(plugin, '.'))
+        -- print(plugin)
+        -- print(string.find(plugin, '.'))
         if string.find(plugin, '.') == nil then
           table.insert(plugins, plugin)
         else
-          table.insert(plugins, split(split(plugin, '/')[2], '.'))
+          table.insert(plugins, split(split(plugin, '/')[2], '.')[1])
         end
       end
     end
@@ -87,15 +88,17 @@ local function setup_plugins()
       todoPlugin(plugin)
     end
 
-    -- print(plugins)
     for _, plugin in ipairs(plugins) do
+      -- print(plugin)
       local mark = 0
       local path = vim.fn.stdpath("config") .. "/lua/plugins/plugin/cfgs/"
       ::continue::
       if mark == 2 then
-        exit('...')
+        utils.errorL(err)
+        break
       end
       local ok, err = xpcall(require, debug.traceback, "plugins.plugin.cfgs." .. plugin)
+      -- print(ok)
       if not ok then
         mark = mark + 1
         pcall(os.execute, "mkdir -p " .. path)

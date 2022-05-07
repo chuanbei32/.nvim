@@ -1,130 +1,169 @@
 local dependency = {
-    "nvim-lua/plenary.nvim",                           -- 专用模块
-    "kyazdani42/nvim-web-devicons",                    -- 文件/文件夹图标
+    "nvim-lua/plenary.nvim",                               -- 专用模块
+    "kyazdani42/nvim-web-devicons",                        -- 文件/文件夹图标
 }
 
 local enhance = {
-    "rcarriga/nvim-notify",                            -- 消息通知模块
-    "lewis6991/impatient.nvim",                        -- 缓存插件字节码
+
+    "rcarriga/nvim-notify",                                -- 消息通知模块
+    "tweekmonster/startuptime.vim",                        -- 启动时间统计
+    "lewis6991/impatient.nvim",                            -- 缓存插件字节码
 }
 
 local ui = {
-    "ellisonleao/gruvbox.nvim",                        -- 主题配色
+
+    "ellisonleao/gruvbox.nvim",                            -- 主题配色
+    "psliwka/vim-smoothie",                                -- 翻页动画
+    "petertriho/nvim-scrollbar",                           -- 滚动条
+    "kevinhwang91/nvim-hlslens",                           -- 搜索高亮
+    "folke/todo-comments.nvim",                            -- Todo 高亮
+    "RRethy/vim-illuminate",                               -- 高亮光标下单词
+    "norcalli/nvim-colorizer.lua",                         -- 颜色显示
+    "glepnir/indent-guides.nvim",                          -- 缩进显示
+    "chentau/marks.nvim",                                  -- 标记显示
     {
         "nvim-lualine/lualine.nvim",                       -- 状态栏
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+        requires = {
+            'kyazdani42/nvim-web-devicons',
+            opt = true
+        }
     },
     {
         "akinsho/bufferline.nvim",                         -- 缓冲区/标签区栏
         requires = 'kyazdani42/nvim-web-devicons'
     },
-    "glepnir/dashboard-nvim",                          -- 启动页/仪表盘
+    "glepnir/dashboard-nvim",                              -- 启动页/仪表盘
+    {
+        "nvim-treesitter/nvim-treesitter",                 -- 代码高亮
+        requires = {
+            "p00f/nvim-ts-rainbow",                        -- 彩虹括号
+            "JoosepAlviste/nvim-ts-context-commentstring", -- 注释样式
+        },
+        run = ':TSUpdate'
+    },
 
-    "nvim-treesitter/nvim-treesitter",                 -- 代码高亮
 }
 
 local feature = {
-    -- "folke/which-key.nvim",                            -- 映射显示
-    "tpope/vim-unimpaired",                            -- 映射增强
-    "akinsho/toggleterm.nvim",                         -- 窗口浮动
-    "skywind3000/asyncrun.vim",                        -- 异步运行管理
-    "skywind3000/asynctasks.vim",                      -- 异步任务管理
-    "simrat39/symbols-outline.nvim",                   -- 大纲管理
-    "preservim/tagbar",                                -- 标签管理
-    "kyazdani42/nvim-tree.lua",                        -- 文件/文件夹管理
-    "simnalamburt/vim-mundo",                          -- 撤销管理
-    "junegunn/vim-peekaboo",                           -- 寄存器/宏管理
 
-    "windwp/nvim-spectre",                             -- 模糊查找/搜索替换
-    "nvim-telescope/telescope.nvim",                   -- 模糊查找/搜索替换
+    -- "folke/which-key.nvim",                             -- 映射显示
+    "tpope/vim-unimpaired",                                -- 映射增强
+    "phaazon/hop.nvim",                                    -- 跳转增强
+    "hrsh7th/vim-eft",                                     -- f/t 增强「高亮」
+    "rainbowhxch/accelerated-jk.nvim",                     -- j/k 增强「加速移动」
+
+    "akinsho/toggleterm.nvim",                             -- 窗口浮动
+    "skywind3000/asyncrun.vim",                            -- 异步运行
+    "skywind3000/asynctasks.vim",                          -- 异步任务
+    "simrat39/symbols-outline.nvim",                       -- 大纲
+
+    "preservim/tagbar",                                    -- 标签
+    "ludovicchabant/vim-gutentags",                        -- 自动生成标签
+
+    "kyazdani42/nvim-tree.lua",                            -- 文件/文件夹
+    "simnalamburt/vim-mundo",                              -- 撤销
+    "junegunn/vim-peekaboo",                               -- 寄存器/宏
+    {
+        "windwp/nvim-spectre",                             -- 模糊查找/搜索替换
+        require = {
+            "nvim-lua/plenary.nvim"
+        }
+    },
+    {
+        "nvim-telescope/telescope.nvim",                   -- 模糊查找/搜索替换
+        require = {
+            "nvim-lua/plenary.nvim"
+        }
+    },
 
     -- 文本对象
     "wellle/targets.vim",
     "terryma/vim-expand-region",
-    "mg979/vim-visual-multi",                          -- 多游标
+    "mg979/vim-visual-multi",                              -- 多游标
 
-    -- "AndrewRadev/switch.vim",                          --
+    -- "AndrewRadev/switch.vim",                           --
     "tpope/vim-surround",
     "AndrewRadev/dsf.vim",
-    "AndrewRadev/tagalong.vim",                        -- 配对 html/xml 标签
-    "alvan/vim-closetag",                              -- 关闭 html/xml 标签
+    "AndrewRadev/tagalong.vim",                            -- 配对 html/xml 标签
+    "alvan/vim-closetag",                                  -- 关闭 html/xml 标签
 
-    "junegunn/vim-easy-align",                         -- 代码对齐
-    "FooSoft/vim-argwrap",                             -- 格式化数组、字典
-    "windwp/nvim-autopairs",                           -- 括号补全
+    "junegunn/vim-easy-align",                             -- 代码对齐
+    "FooSoft/vim-argwrap",                                 -- 格式化数组、字典
+    "windwp/nvim-autopairs",                               -- 括号补全
 
     -- git
     "lewis6991/gitsigns.nvim",
     "sindrets/diffview.nvim",
 
-    "ludovicchabant/vim-gutentags",                    -- 自动生成 tags
-    -- "airblade/vim-rooter",                             -- 更改工作目录
-    "Pocco81/AutoSave.nvim",                           -- 自动保存文件
-    -- "rmagatti/auto-session",                           -- 自动保存会话
+    -- "Pocco81/AutoSave.nvim",                            -- 自动保存文件
+    -- "airblade/vim-rooter",                              -- 更改工作目录
+    -- "ethanholz/nvim-lastplace",                         -- 自动定位到上次离开位置
+    -- "rmagatti/auto-session",                            -- 自动保存会话
     -- "rmagatti/session-lens",
-    -- "ethanholz/nvim-lastplace",                        -- 自动定位到上次离开位置
-
-
-    "folke/todo-comments.nvim",                        -- Todo「高亮」
-    "kevinhwang91/nvim-hlslens",                       -- 搜索高亮
-    "hrsh7th/vim-eft",                                 -- f/t 增强「高亮」
-    "p00f/nvim-ts-rainbow",                            -- 彩虹括号
-    "phaazon/hop.nvim",                                -- 跳转增强
-    "norcalli/nvim-colorizer.lua",                     -- 颜色显示
-    "glepnir/indent-guides.nvim",                      -- 缩进显示
-    "nathom/filetype.nvim",                            -- 文件类型
-    "chentau/marks.nvim",                              -- 标记显示
-    "RRethy/vim-illuminate",                           -- 突出显示光标下单词
-    "rainbowhxch/accelerated-jk.nvim",                 -- j/k 增强「加速移动」
-    "psliwka/vim-smoothie",                            -- 翻页动画效果
-    "petertriho/nvim-scrollbar",                       -- 滚动条效果
 }
 
 local lsp = {
-    "j-hui/fidget.nvim",                           -- 加载信息
-    "tami5/lspsaga.nvim",                          --
-    "ray-x/lsp_signature.nvim",                    --
-    "folke/lsp-colors.nvim",                       --
-    "onsails/lspkind-nvim",                        -- 图标
-    -- "kosayoda/nvim-lightbulb", -- 代码操作
 
-    -- lsp
-    "neovim/nvim-lspconfig",                       --
-    "williamboman/nvim-lsp-installer",             --
+    --
+    "nathom/filetype.nvim",                                -- 文件类型
 
-    -- debug ” 调试
-    -- "puremourning/vimspector",                     --
-    "mfussenegger/nvim-dap",                       --
-    "theHamsta/nvim-dap-virtual-text",             --
-    "rcarriga/nvim-dap-ui",                        --
+    "j-hui/fidget.nvim",                                   -- lsp 加载信息
+    "ray-x/lsp_signature.nvim",                            -- lsp 函数签名
+    "kosayoda/nvim-lightbulb",                             -- lsp 代码操作
+    "onsails/lspkind-nvim",                                -- lsp icon
+    "tami5/lspsaga.nvim",                                  -- lsp UI
+    "folke/lsp-colors.nvim",                               -- lsp 颜色
 
-    -- test ” 测试
-    "vim-test/vim-test",                           --
+    -- 语言服务器
+    "neovim/nvim-lspconfig",                               --
+    "williamboman/nvim-lsp-installer",                     --
 
-    -- comment ” 注释
-    "numToStr/Comment.nvim",                       --
-    "JoosepAlviste/nvim-ts-context-commentstring", --
+    -- 调试
+    "mfussenegger/nvim-dap",                               --
+    {
+        "theHamsta/nvim-dap-virtual-text",                 --
+        require = {
+            "mfussenegger/nvim-dap",
+            {
+                "nvim-treesitter/nvim-treesitter",
+                run = ':TSUpdate'
+            }
+        }
+    },
+    {
+        "rcarriga/nvim-dap-ui",                            --
+        require = {
+            "mfussenegger/nvim-dap",
+        }
+    },
 
-    -- docComment ” 文档注释
-    "danymat/neogen",                              --
+    -- 测试
+    "vim-test/vim-test",                                   --
 
-    -- format ” 格式化
-    "sbdchd/neoformat",                            --
+    -- 注释
+    "numToStr/Comment.nvim",                               --
 
-    -- completion ” 自动完成
-    "hrsh7th/nvim-cmp",                            --
-    "hrsh7th/cmp-nvim-lsp",                        --
-    "hrsh7th/cmp-buffer",                          --
-    "hrsh7th/cmp-path",                            --
-    -- "hrsh7th/cmp-cmdline", -- cmp-cmdline
+    -- 文档注释
+    "danymat/neogen",                                      --
 
-    -- snippet ” 代码片段
-    "hrsh7th/cmp-vsnip",                           --
-    "hrsh7th/vim-vsnip",                           --
-    "rafamadriz/friendly-snippets",                --
+    -- 格式化
+    "sbdchd/neoformat",                                    --
 
-    -- lint ” 代码诊断
-    "mfussenegger/nvim-lint",                      --
+    -- 自动完成
+    "hrsh7th/nvim-cmp",                                    --
+    "hrsh7th/cmp-nvim-lsp",                                --
+    "hrsh7th/cmp-buffer",                                  --
+    "hrsh7th/cmp-path",                                    --
+    -- "hrsh7th/cmp-cmdline",                              --
+
+    -- 代码片段
+    "hrsh7th/cmp-vsnip",                                   --
+    "hrsh7th/vim-vsnip",                                   --
+    "rafamadriz/friendly-snippets",                        --
+
+    -- 代码诊断
+    "mfussenegger/nvim-lint",                              --
+
 }
 
 return {

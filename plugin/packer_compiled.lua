@@ -69,11 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["AutoSave.nvim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/AutoSave.nvim",
-    url = "https://github.com/Pocco81/AutoSave.nvim"
-  },
   ["Comment.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/Comment.nvim",
@@ -249,6 +244,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
     url = "https://github.com/kevinhwang91/nvim-hlslens"
   },
+  ["nvim-lightbulb"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
+    url = "https://github.com/kosayoda/nvim-lightbulb"
+  },
   ["nvim-lint"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-lint",
@@ -315,6 +315,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["startuptime.vim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/startuptime.vim",
+    url = "https://github.com/tweekmonster/startuptime.vim"
   },
   ["symbols-outline.nvim"] = {
     loaded = true,

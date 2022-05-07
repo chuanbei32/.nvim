@@ -114,6 +114,8 @@ vim.opt.sessionoptions = "blank,buffers,curdir,folds,help,options,tabpages,winsi
 -- shada
 -- vim.opt.shada
 
+-- tags
+
 vim.opt.suffixes = '.backup'
 vim.opt.magic = true
 vim.opt.gdefault = true
