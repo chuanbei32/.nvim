@@ -3,10 +3,11 @@
 local utils = require("tools.utils")
 
 local cfgs = {
-    "basics",
+    "options",
+    'commands',
+    'mappings',
     "plugins",
     "lsps",
-    "completes",
 }
 
 for _, cfg in ipairs(cfgs) do

@@ -82,7 +82,7 @@ local function setup_plugins()
       end
     end
 
-    for _, plugin in ipairs(require("plugins.plugin.packer.use")) do
+    for _, plugin in ipairs(require("plugins.packerUse")) do
       -- print(type(plugin))
       use(plugin)
       todoPlugin(plugin)
@@ -91,13 +91,13 @@ local function setup_plugins()
     for _, plugin in ipairs(plugins) do
       -- print(plugin)
       local mark = 0
-      local path = vim.fn.stdpath("config") .. "/lua/plugins/plugin/cfgs/"
+      local path = vim.fn.stdpath("config") .. "/lua/plugins/configs"
       ::continue::
       if mark == 2 then
         utils.errorL(err)
         break
       end
-      local ok, err = xpcall(require, debug.traceback, "plugins.plugin.cfgs." .. plugin)
+      local ok, err = xpcall(require, debug.traceback, "plugins.configs." .. plugin)
       -- print(ok)
       if not ok then
         mark = mark + 1
