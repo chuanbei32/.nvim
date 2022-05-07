@@ -109,7 +109,6 @@ local function setup_plugins()
         io.output(file)
         -- io.write("")
         io.close(file)
-        -- utils.errorL(err)
         goto continue
       end
     end
