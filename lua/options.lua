@@ -96,6 +96,8 @@ vim.opt.signcolumn = 'yes'
 -- indent
 vim.opt.autoindent = true -- 根据上一行决定新行的缩进
 vim.opt.copyindent = true -- 使得 'autoindent' 使用已有的缩进结构
+vim.opt.cindent = true --
+vim.opt.smartindent = true --
 vim.opt.breakindent = true -- 回绕行重复缩进
 vim.opt.breakindentopt = '' -- 'breakindent' 设置
 vim.opt.shiftwidth = 4 -- (自动) 缩进使用的步进单位，以空白数目计

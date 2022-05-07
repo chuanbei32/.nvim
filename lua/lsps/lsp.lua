@@ -9,6 +9,7 @@ local servers = {
   sumneko_lua = require("lsps.lsp.lua"),
   -- phpactor = require("lsps.lsp.php"),
   intelephense = require("lsps.lsp.php"),
+  -- psalm = require("lsps.lsp.php"),
   gopls = require("lsps.lsp.go"),
   pylsp = require("lsps.lsp.python"),
   cssls = require("lsps.lsp.css"),
