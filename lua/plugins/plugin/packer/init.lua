@@ -54,6 +54,7 @@ local function setup_plugins()
       event = "VimEnter",
     })
 
+    local plugins = {}
     local function split(str,reps)
         local resultStrList = {}
         string.gsub(str,'[^'..reps..']+',function (w)
@@ -61,27 +62,46 @@ local function setup_plugins()
         end)
         return resultStrList
     end
-
-    local plugins = require("plugins.plugin.packer.use")
-    for _, plugin in ipairs(plugins) do
-      use(plugin)
+    todoPlugin = function(plugin)
+      print(type(plugin))
+      -- print(type(plugin) == 'table')
+      if type(plugin) == 'table' then
+        for _, tmp in ipairs(plugin) do
+            print(type(tmp))
+            print(tmp)
+            todoPlugin(tmp)
+        end
+      else
+        print(string.find(plugin, '.'))
+        if string.find(plugin, '.') == nil then
+          table.insert(plugins, plugin)
+        else
+          table.insert(plugins, split(split(plugin, '/')[2], '.'))
+        end
+      end
     end
 
+    for _, plugin in ipairs(require("plugins.plugin.packer.use")) do
+      -- print(type(plugin))
+      use(plugin)
+      todoPlugin(plugin)
+    end
+
+    -- print(plugins)
     for _, plugin in ipairs(plugins) do
       local mark = 0
-      local cfg = split(split(plugin, '/')[2], '.')[1]
       local path = vim.fn.stdpath("config") .. "/lua/plugins/plugin/cfgs/"
       ::continue::
       if mark == 2 then
         exit('...')
       end
-      local ok, err = xpcall(require, debug.traceback, "plugins.plugin.cfgs." .. cfg)
+      local ok, err = xpcall(require, debug.traceback, "plugins.plugin.cfgs." .. plugin)
       if not ok then
         mark = mark + 1
         pcall(os.execute, "mkdir -p " .. path)
         -- local file = pcall(io.open, path .. cfg .. '.lua', "a")
-        local file = io.open(path .. cfg .. '.lua', "a")
-        print(path .. cfg .. '.lua')
+        local file = io.open(path .. plugin .. '.lua', "a")
+        print(path .. plugin .. '.lua')
         -- print(file)
         io.output(file)
         -- io.write("")

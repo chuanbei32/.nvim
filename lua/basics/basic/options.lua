@@ -62,9 +62,9 @@ vim.opt.showmatch = true
 vim.opt.matchtime = 1
 
 -- 超时
-vim.opt.timeout = true
+vim.opt.timeout = false
 vim.opt.ttimeout = false
-vim.opt.timeoutlen = 0
+vim.opt.timeoutlen = 300
 vim.opt.ttimeoutlen = 300
 
 -- 终端
@@ -156,5 +156,6 @@ vim.cmd("set nrformats-=octal")
 --
 vim.cmd([[ syntax enable on ]])
 vim.opt.termguicolors = true
+
 vim.opt.background = "dark"
 vim.cmd("colorscheme gruvbox")
