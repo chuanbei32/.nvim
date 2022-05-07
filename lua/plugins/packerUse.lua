@@ -2,7 +2,7 @@ local ui = {
 
     "ellisonleao/gruvbox.nvim",                            -- 主题配色
     "kevinhwang91/nvim-hlslens",                           -- 搜索高亮
-    "folke/todo-comments.nvim",                            -- Todo 高亮
+    "folke/todo-comments.nvim",                            -- 待办高亮
     "RRethy/vim-illuminate",                               -- 高亮光标下单词
     "norcalli/nvim-colorizer.lua",                         -- 颜色显示
     -- "glepnir/indent-guides.nvim",                          -- 缩进显示
@@ -21,7 +21,7 @@ local ui = {
         requires = 'kyazdani42/nvim-web-devicons'
     },
     "mhinz/vim-startify",                                  -- 启动页/仪表盘
-    "glepnir/dashboard-nvim",                              -- 启动页/仪表盘
+    -- "glepnir/dashboard-nvim",                              -- 启动页/仪表盘
     {
         "nvim-treesitter/nvim-treesitter",                 -- 代码高亮
         requires = {
@@ -155,6 +155,8 @@ local lsp = {
     "hrsh7th/cmp-vsnip",                                   --
     "hrsh7th/vim-vsnip",                                   --
     "rafamadriz/friendly-snippets",                        --
+    -- "SirVer/ultisnips",
+    -- "honza/vim-snippets",
 
     -- 代码诊断
     "mfussenegger/nvim-lint",                              --

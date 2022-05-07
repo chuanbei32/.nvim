@@ -164,11 +164,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
-  ["indent-guides.nvim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/indent-guides.nvim",
-    url = "https://github.com/glepnir/indent-guides.nvim"
-  },
   ["lsp-colors.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
