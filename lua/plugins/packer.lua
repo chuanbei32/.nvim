@@ -91,7 +91,7 @@ local function setup_plugins()
     for _, plugin in ipairs(plugins) do
       -- print(plugin)
       local mark = 0
-      local path = vim.fn.stdpath("config") .. "/lua/plugins/configs"
+      local path = vim.fn.stdpath("config") .. "/lua/plugins/configs/"
       ::continue::
       if mark == 2 then
         utils.errorL(err)

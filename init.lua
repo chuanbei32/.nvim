@@ -5,6 +5,7 @@ local utils = require("tools.utils")
 local cfgs = {
     "options",
     'commands',
+    'autocommands',
     'mappings',
     "plugins",
     "lsps",

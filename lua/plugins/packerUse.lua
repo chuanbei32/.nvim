@@ -1,29 +1,13 @@
-local dependency = {
-
-    "nvim-lua/plenary.nvim",                               -- 专用模块
-    "kyazdani42/nvim-web-devicons",                        -- 文件/文件夹图标
-}
-
-local system = {
-
-    "rcarriga/nvim-notify",                                -- 消息通知
-    "tweekmonster/startuptime.vim",                        -- 启动时间
-
-    "lewis6991/impatient.nvim",                            -- 插件缓存
-
-    "nathom/filetype.nvim",                                -- 文件类型
-}
-
 local ui = {
 
     "ellisonleao/gruvbox.nvim",                            -- 主题配色
-    -- "psliwka/vim-smoothie",                                -- 翻页动画
-    -- "petertriho/nvim-scrollbar",                           -- 滚动条
     "kevinhwang91/nvim-hlslens",                           -- 搜索高亮
     "folke/todo-comments.nvim",                            -- Todo 高亮
     "RRethy/vim-illuminate",                               -- 高亮光标下单词
     "norcalli/nvim-colorizer.lua",                         -- 颜色显示
-    "glepnir/indent-guides.nvim",                          -- 缩进显示
+    -- "glepnir/indent-guides.nvim",                          -- 缩进显示
+    "lukas-reineke/indent-blankline.nvim",                 -- 缩进显示
+    -- "Yggdroot/indentLine",                              -- 缩进显示
     "chentau/marks.nvim",                                  -- 标记显示
     {
         "nvim-lualine/lualine.nvim",                       -- 状态栏
@@ -36,6 +20,7 @@ local ui = {
         "akinsho/bufferline.nvim",                         -- 缓冲区/标签区栏
         requires = 'kyazdani42/nvim-web-devicons'
     },
+    "mhinz/vim-startify",                                  -- 启动页/仪表盘
     "glepnir/dashboard-nvim",                              -- 启动页/仪表盘
     {
         "nvim-treesitter/nvim-treesitter",                 -- 代码高亮
@@ -49,6 +34,8 @@ local ui = {
 }
 
 local feature = {
+
+    "nathom/filetype.nvim",                                -- 文件类型
 
     -- "folke/which-key.nvim",                             -- 映射显示
     "tpope/vim-unimpaired",                                -- 映射增强
@@ -113,6 +100,7 @@ local feature = {
 
 local lsp = {
 
+
     "j-hui/fidget.nvim",                                   -- lsp 加载信息
     "ray-x/lsp_signature.nvim",                            -- lsp 函数签名
     "kosayoda/nvim-lightbulb",                             -- lsp 代码操作
@@ -173,10 +161,17 @@ local lsp = {
 
 }
 
+local other = {
+
+    "rcarriga/nvim-notify",                                -- 消息通知
+
+    "tweekmonster/startuptime.vim",                        -- 启动时间统计
+    "lewis6991/impatient.nvim",                            -- 插件缓存
+}
+
 return {
-    dependency,
-    system,
     ui,
     feature,
     lsp,
+    other,
 }
