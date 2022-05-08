@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/asynctasks.vim",
     url = "https://github.com/skywind3000/asynctasks.vim"
   },
+  ["auto-session"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/auto-session",
+    url = "https://github.com/rmagatti/auto-session"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -331,6 +336,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/range-highlight.nvim",
     url = "https://github.com/winston0410/range-highlight.nvim"
   },
+  ["session-lens"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/session-lens",
+    url = "https://github.com/rmagatti/session-lens"
+  },
   ["shade.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/shade.nvim",
@@ -341,10 +351,20 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/startuptime.vim",
     url = "https://github.com/tweekmonster/startuptime.vim"
   },
+  ["switch.vim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/switch.vim",
+    url = "https://github.com/AndrewRadev/switch.vim"
+  },
   ["symbols-outline.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
     url = "https://github.com/simrat39/symbols-outline.nvim"
+  },
+  tagbar = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/tagbar",
+    url = "https://github.com/preservim/tagbar"
   },
   ["targets.vim"] = {
     loaded = true,
@@ -391,6 +411,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-expand-region",
     url = "https://github.com/terryma/vim-expand-region"
   },
+  ["vim-gutentags"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-gutentags",
+    url = "https://github.com/ludovicchabant/vim-gutentags"
+  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-illuminate",
@@ -415,11 +440,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-test",
     url = "https://github.com/vim-test/vim-test"
-  },
-  ["vim-unimpaired"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-unimpaired",
-    url = "https://github.com/tpope/vim-unimpaired"
   },
   ["vim-visual-multi"] = {
     loaded = true,

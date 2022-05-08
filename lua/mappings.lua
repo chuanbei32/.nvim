@@ -57,9 +57,9 @@ map('n', '<leader>sh', '<cmd>shell<cr>')
 -- map('n', '<leader>sdr', '<cmd>rshada!<cr>')
 
 -- session
--- local session_dir = vim.fn.stdpath("data") .. "/session"
--- map('n', '<leader>ss', ':mksession! ~/.vim/__session/.vim<left><left><left><left>')
--- map('n', '<leader>sr', ':source ~/.vim/__session/')
+local session_dir = vim.fn.stdpath("data") .. "/session"
+map('n', '<leader>ss', ':mksession! ' .. session_dir .. '/.vim<left><left><left><left>')
+map('n', '<leader>sr', ':source ' .. session_dir .. '/')
 
 -- mark
 
