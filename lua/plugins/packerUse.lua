@@ -6,17 +6,29 @@ local ui = {
     'shaunsingh/nord.nvim',
     'projekt0n/github-nvim-theme',
 
-    'kevinhwang91/nvim-hlslens',                           -- 搜索高亮
-    'folke/todo-comments.nvim',                            -- 待办高亮
-    'RRethy/vim-illuminate',                               -- 高亮光标下单词
-    'norcalli/nvim-colorizer.lua',                         -- 颜色显示
+    'kevinhwang91/nvim-hlslens',                           -- 搜索/查找高亮
+    'folke/todo-comments.nvim',                            -- 待办事项高亮表示、搜索/查找
+    'norcalli/nvim-colorizer.lua',                         -- 颜色模式表示方式转换为可视颜色表示方式
+    'sunjon/shade.nvim',
 
+    {
+        'winston0410/range-highlight.nvim',
+        requires = {
+            'winston0410/cmd-parser.nvim'
+        }
+    },
     -- 缩进显示
     -- 'glepnir/indent-guides.nvim',
     'lukas-reineke/indent-blankline.nvim',
     -- 'Yggdroot/indentLine',
 
+    {
+        'folke/trouble.nvim',
+        requires = 'kyazdani42/nvim-web-devicons',
+    },
+
     'chentau/marks.nvim',                                  -- 标记显示
+
     -- 状态栏
     {
         'nvim-lualine/lualine.nvim',
@@ -48,6 +60,8 @@ local ui = {
         requires = {
             'p00f/nvim-ts-rainbow',                        -- 彩虹括号
             'JoosepAlviste/nvim-ts-context-commentstring', -- 注释样式
+            'nvim-treesitter/nvim-treesitter-textobjects',
+            'RRethy/nvim-treesitter-textsubjects',
         },
         run = ':TSUpdate'
     },
@@ -60,6 +74,7 @@ local feature = {
 
     -- 'folke/which-key.nvim',                             -- 映射显示
     'tpope/vim-unimpaired',                                -- 映射增强
+    'echasnovski/mini.nvim',
     'phaazon/hop.nvim',                                    -- 跳转增强
     'hrsh7th/vim-eft',                                     -- f/t 增强「高亮」
     'rainbowhxch/accelerated-jk.nvim',                     -- j/k 增强「加速移动」
@@ -74,15 +89,20 @@ local feature = {
 
     'kyazdani42/nvim-tree.lua',                            -- 文件/文件夹
     'simnalamburt/vim-mundo',                              -- 撤销
-    'junegunn/vim-peekaboo',                               -- 寄存器/宏
+
+    -- 寄存器/宏
+    'junegunn/vim-peekaboo',
+    'gennaro-tedesco/nvim-peekup',
+
+    -- 模糊查找/搜索替换
     {
-        'windwp/nvim-spectre',                             -- 模糊查找/搜索替换
+        'windwp/nvim-spectre',
         requires = {
             'nvim-lua/plenary.nvim'
         }
     },
     {
-        'nvim-telescope/telescope.nvim',                   -- 模糊查找/搜索替换
+        'nvim-telescope/telescope.nvim',
         requires = {
             'nvim-lua/plenary.nvim'
         }
@@ -121,6 +141,8 @@ local feature = {
 
 local lsp = {
 
+    'nvim-lua/lsp-status.nvim', -- 状态栏显示
+    'RRethy/vim-illuminate',                               -- 高亮光标下所有单词
 
     'j-hui/fidget.nvim',                                   -- lsp 加载信息
     'ray-x/lsp_signature.nvim',                            -- lsp 函数签名
