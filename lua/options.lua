@@ -112,7 +112,8 @@ vim.opt.vartabstop = '' -- 用于 <Tab> 对应空格数的列表
 vim.opt.varsofttabstop = '' -- 键入 <Tab> 时生成空格数的列表
 -- fold
 vim.opt.foldenable = true
-vim.opt.foldmethod = 'syntax'
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = ''
 vim.opt.foldlevel = 2 -- 当折叠级别高于此值时关闭折叠
 vim.opt.foldlevelstart = 2 -- 'foldlevel' 的设置
 vim.opt.foldnestmax = 3 -- 最大折叠深度
@@ -125,10 +126,10 @@ vim.opt.matchpairs = '(:),{:},[:],<:>'
 vim.opt.matchtime = 1
 vim.opt.showmatch = true -- 插入括号时短暂跳转到匹配的括号
 -- timeout
-vim.opt.timeout = false
+vim.opt.timeout = true
 vim.opt.ttimeout = false
-vim.opt.timeoutlen = 300
-vim.opt.ttimeoutlen = 300
+vim.opt.timeoutlen = 500
+vim.opt.ttimeoutlen = 500
 -- search/replace
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -138,7 +139,9 @@ vim.opt.wrapscan = false
 vim.opt.magic = true
 vim.opt.suffixes = '.backup'
 vim.opt.gdefault = false
-
+-- comment
+-- vim.opt.comments = ''
+-- vim.opt.commentstring = ''
 
 
 vim.opt.lazyredraw = true

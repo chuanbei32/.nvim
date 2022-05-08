@@ -47,10 +47,3 @@ vim.cmd([[
 		autocmd!
 	augroup END
 ]])
-
--- 设置注释所用字符串
-vim.cmd([[
-	augroup Commentary
-		autocmd!
-	augroup END
-]])
