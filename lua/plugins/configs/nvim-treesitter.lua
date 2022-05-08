@@ -1,8 +1,9 @@
 require("nvim-treesitter.configs").setup({
 	ensure_installed = {
 		"lua",
-		"phpdoc",
-		"python"
+		"php",
+		-- "phpdoc",
+		"python",
 	},
 	sync_install = false,
 	ignore_install = {},

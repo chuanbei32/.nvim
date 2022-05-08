@@ -1,3 +1,5 @@
+-- autocommands
+
 -- 自动重载配置文件
 vim.cmd([[ autocmd BufWritePost load.lua source <afile> | PackerCompile ]])
 

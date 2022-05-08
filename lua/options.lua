@@ -1,3 +1,5 @@
+-- options
+
 vim.opt.belloff = 'all'
 vim.opt.errorbells = false
 vim.opt.visualbell = true
