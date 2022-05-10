@@ -9,11 +9,13 @@ local basis = {
 
     'lewis6991/impatient.nvim',                        -- 插件缓存
 
-    'nathom/filetype.nvim',                            -- 文件类型
     'folke/which-key.nvim',                            -- 映射提示
 
-    -- 'echasnovski/mini.nvim', --
-    -- 'tpope/vim-unimpaired', -- 操作优化
+    'nathom/filetype.nvim',                            -- 文件类型
+
+    -- 'echasnovski/mini.nvim',
+    'tpope/vim-unimpaired',
+
     'wellle/targets.vim',                              -- 文本对象扩展
     'terryma/vim-expand-region',                       -- 文本区域扩张
     'mg979/vim-visual-multi',                          -- 多游标

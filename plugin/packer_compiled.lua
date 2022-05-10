@@ -441,6 +441,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-test",
     url = "https://github.com/vim-test/vim-test"
   },
+  ["vim-unimpaired"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-unimpaired",
+    url = "https://github.com/tpope/vim-unimpaired"
+  },
   ["vim-visual-multi"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
