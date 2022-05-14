@@ -15,7 +15,7 @@ end
 
 vim.g.mapleader = "\\"
 
--- map('n', '<esc>', '<cmd>nohlsearch<cr><esc>')
+-- map('n', '<esc>', ':nohlsearch<cr><esc>')
 
 map('n', '<tab>', 'V>', {noremap = false})
 map('v', '<tab>', '>gv', {noremap = false})
@@ -38,23 +38,23 @@ map('n', '<leader>grl', ':s/<c-r><c-w>//<left>')
 -- 搜索替换光标下单词「全局」
 map('n', '<leader>grg', ':%s/<c-r><c-w>//g<left>')
 -- 取消高亮
-map('n', '<leader>nhs', '<cmd>nohlsearch<cr>')
+map('n', '<leader>nhs', ':nohlsearch<cr>')
 -- 清楚行尾空格
-map('n', '<leader>fws', [=[ <cmd>%s/\\\@<!\s\+$//<cr> ]=])
+map('n', '<leader>fws', [=[ :%s/\\\@<!\s\+$//<cr> ]=])
 -- 开启插入模式下粘贴模式
-map('n', '<leader>isp', '<cmd>set paste<cr>')
+map('n', '<leader>isp', ':set paste<cr>')
 
 
 -- terminal
-map('n', '<leader>tm', '<cmd>terminal<cr>')
+map('n', '<leader>tm', ':terminal<cr>')
 
 -- shell
-map('n', '<leader>sh', '<cmd>shell<cr>')
+map('n', '<leader>sh', ':shell<cr>')
 
 -- shada
 -- local shada_dir = vim.fn.stdpath("data") .. "/shada"
--- map('n', '<leader>sds', '<cmd>wshada!<cr>')
--- map('n', '<leader>sdr', '<cmd>rshada!<cr>')
+-- map('n', '<leader>sds', ':wshada!<cr>')
+-- map('n', '<leader>sdr', ':rshada!<cr>')
 
 -- session
 local session_dir = vim.fn.stdpath("data") .. "/session"
@@ -72,16 +72,16 @@ map('n', '<leader>sr', ':source ' .. session_dir .. '/')
 -- jump
 
 -- buffer
-map('n', '<leader>bl', '<cmd>buffers<cr>')
-map('n', '<leader>bn', '<cmd>bnext<cr>')
-map('n', '<leader>bp', '<cmd>bprevious<cr>')
+map('n', '<leader>bl', ':buffers<cr>')
+map('n', '<leader>bn', ':bnext<cr>')
+map('n', '<leader>bp', ':bprevious<cr>')
 map('n', '<leader>bd', ':bdelete<space>')
-map('n', '<leader>bo', '<cmd>BufferOnly<cr>')
-map('n', '<leader>bc', '<cmd>BufferCurrent<cr>')
+map('n', '<leader>bo', ':BufferOnly<cr>')
+map('n', '<leader>bc', ':BufferCurrent<cr>')
 map('n', '<leader>bb', ':buffer<space>')
 map('n', '<leader>bx', '<c-^>')
-map('n', '<leader>br', '<cmd>bufdo e<cr>')
-map('n', '<leader>be', '<cmd>e<cr>')
+map('n', '<leader>br', ':bufdo e<cr>')
+map('n', '<leader>be', ':e<cr>')
 map('n', '<leader>bsl', ':sbuffer<space>')
 map('n', '<leader>bsvl', ':vertical sbuffer<space>')
 map('n', '<leader>bsvr', ':vertical belowright sbuffer<space>')
@@ -116,15 +116,15 @@ map('n', '<leader>wL', '<c-w>L')
 map('n', '<leader>tfe', ':tabedit<space>')
 map('n', '<leader>tff', ':tabfind<space>')
 map('n', '<leader>tfn', ':tabnew<space>')
-map('n', '<leader>tl', '<cmd>tabs<cr>')
-map('n', '<leader>tn', '<cmd>tabnext<cr>')
-map('n', '>', '<cmd>tabnext<cr>')
+map('n', '<leader>tl', ':tabs<cr>')
+map('n', '<leader>tn', ':tabnext<cr>')
+map('n', '>', ':tabnext<cr>')
 map('x', '>', '>gv|')
-map('n', '<leader>tp', '<cmd>tabprev<cr>')
-map('n', '<', '<cmd>tabprev<cr>')
+map('n', '<leader>tp', ':tabprev<cr>')
+map('n', '<', ':tabprev<cr>')
 map('x', '<', '<gv')
-map('n', '<leader>tc', '<cmd>tabclose<cr>')
-map('n', '<leader>to', '<cmd>tabonly<cr>')
+map('n', '<leader>tc', ':tabclose<cr>')
+map('n', '<leader>to', ':tabonly<cr>')
 map('n', '<leader>1', '1gt<cr>')
 map('n', '<leader>2', '2gt<cr>')
 map('n', '<leader>3', '3gt<cr>')
@@ -137,13 +137,13 @@ map('n', '<leader>9', '9gt<cr>')
 map('n', '<leader>0', '10gt<cr>')
 
 -- quickfix
-map('n', '<leader>qo', '<cmd>copen 10<cr>')
-map('n', '<leader>ql', '<cmd>clast<cr>')
-map('n', '<leader>qf', '<cmd>cfirst<cr>')
-map('n', '<leader>qn', '<cmd>cnext<cr>')
-map('n', '<leader>qp', '<cmd>cprevious<cr>')
-map('n', '<leader>qc', '<cmd>cclose<cr>')
-map('n', '<leader>qe', '<cmd>cc<cr>')
+map('n', '<leader>qo', ':copen 10<cr>')
+map('n', '<leader>ql', ':clast<cr>')
+map('n', '<leader>qf', ':cfirst<cr>')
+map('n', '<leader>qn', ':cnext<cr>')
+map('n', '<leader>qp', ':cprevious<cr>')
+map('n', '<leader>qc', ':cclose<cr>')
+map('n', '<leader>qe', ':cc<cr>')
 
 
 

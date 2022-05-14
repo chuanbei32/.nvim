@@ -154,10 +154,10 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["gruvbox.nvim"] = {
+  ["gruvbox-material"] = {
     loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
+    path = "/root/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
   },
   harpoon = {
     loaded = true,
@@ -212,7 +212,7 @@ _G.packer_plugins = {
   ["marks.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/marks.nvim",
-    url = "https://github.com/chentau/marks.nvim"
+    url = "https://github.com/chentoast/marks.nvim"
   },
   neoformat = {
     loaded = true,
@@ -258,6 +258,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
     url = "https://github.com/kevinhwang91/nvim-hlslens"
+  },
+  ["nvim-lastplace"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-lastplace",
+    url = "https://github.com/ethanholz/nvim-lastplace"
   },
   ["nvim-lightbulb"] = {
     loaded = true,
@@ -425,6 +430,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-mundo",
     url = "https://github.com/simnalamburt/vim-mundo"
+  },
+  ["vim-repeat"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-repeat",
+    url = "https://github.com/tpope/vim-repeat"
   },
   ["vim-startify"] = {
     loaded = true,

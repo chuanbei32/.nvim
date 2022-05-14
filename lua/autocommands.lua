@@ -32,7 +32,7 @@ vim.cmd([[ autocmd InsertLeave * :set nopaste ]])
 
 -- 设置空白显示方式
 vim.cmd([=[
-	augroup Whitespace
+	augroup whitespace
 		autocmd!
 		autocmd ColorScheme * highlight default ExtraWhitespace ctermbg=darkred guibg=darkred
 		autocmd BufRead,BufNew * match ExtraWhitespace /\\\@<![\u3000[:space:]]\+$/
@@ -42,8 +42,8 @@ vim.cmd([=[
 ]=])
 
 -- 设置折叠方式
-vim.cmd([[
-	augroup fold
-		autocmd!
-	augroup END
-]])
+-- vim.cmd([[
+-- 	augroup fold
+-- 		autocmd!
+-- 	augroup END
+-- ]])
