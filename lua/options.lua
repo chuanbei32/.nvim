@@ -65,7 +65,7 @@ vim.opt.report = 0
 vim.opt.wildmenu = false
 vim.opt.wildmode = 'list,longest,full'
 vim.opt.wildignorecase = true
-vim.opt.wildignorecase = false
+-- vim.opt.wildignorecase = false
 vim.opt.showcmd = true
 vim.opt.history = 100
 -- status line

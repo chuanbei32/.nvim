@@ -7,6 +7,7 @@ local cfgs = {
     'commands',
     'autocommands',
     'mappings',
+    'colors',
     "plugins",
     "lsps",
 }
