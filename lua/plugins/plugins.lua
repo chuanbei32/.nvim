@@ -30,6 +30,15 @@ table.insert(apply, 'impatient')
         -- 映射提示
         table.insert(use, 'folke/which-key.nvim')
         table.insert(apply, 'which-key')
+        table.insert(use, {
+                'preservim/tagbar',                            -- 标签管理
+                requires = {
+                    'ludovicchabant/vim-gutentags',            -- 自动生成标签
+                }
+            })
+        table.insert(apply, 'tagbar')
+        table.insert(apply, 'vim-gutentags')
+
     -- }
     -- Header {
         table.insert(use, {
@@ -96,6 +105,114 @@ table.insert(apply, 'impatient')
 
 -- Work flow enhancement
 -- {
+    -- LSP「Language Server Protocol」 {
+        table.insert(use, {
+            'neovim/nvim-lspconfig', -- 语言服务器
+            requires = {
+                'williamboman/nvim-lsp-installer', -- 自动安装语言服务器
+                'jose-elias-alvarez/null-ls.nvim' -- 非 LSP 转 LSP
+            }
+        })
+        -- LSP 符号信息
+        table.insert(use, 'simrat39/symbols-outline.nvim')
+        table.insert(apply, 'symbols-outline')
+        -- LSP 状态栏信息
+        table.insert(use, 'nvim-lua/lsp-status.nvim')
+        table.insert(apply, 'lsp-status')
+        -- LSP 独立加载信息
+        table.insert(use, 'j-hui/fidget.nvim')
+        table.insert(apply, 'fidget')
+        -- LSP 函数签名
+        table.insert(use, 'ray-x/lsp_signature.nvim')
+        table.insert(apply, 'lsp_signature')
+        table.insert(use, {
+                'kosayoda/nvim-lightbulb', -- LSP 代码操作
+                requires = {
+                    'antoinemadec/FixCursorHold.nvim'
+                }
+            })
+        table.insert(apply, 'nvim-lightbulb')
+        -- LSP 图标
+        table.insert(use, 'onsails/lspkind-nvim')
+        table.insert(apply, 'lspkind-nvim')
+        -- LSP UI
+        table.insert(use, 'tami5/lspsaga.nvim')
+        table.insert(apply, 'lspsaga')
+        -- LSP 颜色
+        table.insert(use, 'folke/lsp-colors.nvim')
+        table.insert(apply, 'lsp-colors')
+        -- 注释
+        table.insert(use, 'numToStr/Comment.nvim')
+        table.insert(apply, 'Comment')
+        -- 文档注释
+        table.insert(use, {
+                'danymat/neogen',
+                requires = 'nvim-treesitter/nvim-treesitter' -- 突出显示
+            })
+        table.insert(apply, 'neogen')
+        -- 注释样式
+        table.insert(use, {
+                'JoosepAlviste/nvim-ts-context-commentstring',
+                requires = 'nvim-treesitter/nvim-treesitter' -- 突出显示
+            })
+        table.insert(apply, 'nvim-ts-context-commentstring')
+        -- 测试
+        table.insert(use, 'vim-test/vim-test')
+        table.insert(apply, 'vim-test')
+        -- 代码诊断
+        table.insert(use, 'mfussenegger/nvim-lint')
+        table.insert(apply, 'nvim-lint')
+        -- 格式化
+        table.insert(use, 'sbdchd/neoformat')
+        table.insert(apply, 'neoformat')
+        -- 自动完成/代码片段
+        table.insert(use, {
+                'hrsh7th/nvim-cmp',
+                requires = {
+                    'hrsh7th/cmp-nvim-lsp',
+                    'hrsh7th/cmp-buffer',
+                    'hrsh7th/cmp-path',
+                    'hrsh7th/cmp-cmdline',
+                    --
+                    'hrsh7th/cmp-vsnip',
+                    'hrsh7th/vim-vsnip',
+                    --
+                    'SirVer/ultisnips',
+                    'quangnguyen30192/cmp-nvim-ultisnips',
+                    --
+                    'dcampos/nvim-snippy',
+                    'dcampos/cmp-snippy',
+                    --
+                    'L3MON4D3/LuaSnip',
+                    'saadparwaiz1/cmp_luasnip',
+                    --
+                    'honza/vim-snippets',
+                    'rafamadriz/friendly-snippets',
+                }
+            })
+        table.insert(apply, 'nvim-cmp')
+
+    -- }
+
+    -- DAP「Debug Adapter Protocol」 {
+        table.insert(use, 'mfussenegger/nvim-dap')
+        table.insert(use, {
+            'theHamsta/nvim-dap-virtual-text',
+            requires = {
+                'mfussenegger/nvim-dap',
+                {
+                    'nvim-treesitter/nvim-treesitter', -- 突出显示
+                }
+            }
+        })
+        table.insert(use, {
+            'rcarriga/nvim-dap-ui',
+            requires = {
+                'mfussenegger/nvim-dap',
+            }
+        })
+    -- }
+
     -- Git {
         table.insert(use, 'lewis6991/gitsigns.nvim')
         table.insert(apply, 'gitsigns')
@@ -106,7 +223,11 @@ table.insert(apply, 'impatient')
         --     }
         -- }
     -- }
-    -- {
+
+    -- Other {
+        -- -- 禅模式
+        -- table.insert(use, 'folke/zen-mode.nvim')
+        -- table.insert(apply, 'zen-mode')
         -- 括号补全
         table.insert(use, 'windwp/nvim-autopairs')
         table.insert(apply, 'nvim-autopairs')
@@ -148,6 +269,9 @@ table.insert(apply, 'impatient')
         -- 标记/书签管理
         table.insert(use, 'chentoast/marks.nvim')
         table.insert(apply, 'marks')
+        -- 文件管理
+        table.insert(use, 'kevinhwang91/rnvimr')
+        table.insert(apply, 'rnvimr')
         -- 文件管理
         table.insert(use, 'kyazdani42/nvim-tree.lua')
         table.insert(apply, 'nvim-tree')
@@ -228,106 +352,6 @@ table.insert(apply, 'impatient')
         table.insert(apply, 'nvim-treesitter-textsubjects')
     -- }
 -- }
-
--- {
---     'preservim/tagbar',                            -- 标签管理
---     requires = {
---         'ludovicchabant/vim-gutentags',            -- 自动生成标签
---     }
--- }
--- 符号管理
-table.insert(use, 'simrat39/symbols-outline.nvim')
-table.insert(apply, 'symbols-outline')
--- lsp 信息显示状态栏
-table.insert(use, 'nvim-lua/lsp-status.nvim')
-table.insert(apply, 'lsp-status')
--- lsp 加载信息
-table.insert(use, 'j-hui/fidget.nvim')
-table.insert(apply, 'fidget')
--- lsp 函数签名
-table.insert(use, 'ray-x/lsp_signature.nvim')
-table.insert(apply, 'lsp_signature')
--- lsp 代码操作
-table.insert(use, 'kosayoda/nvim-lightbulb')
-table.insert(apply, 'nvim-lightbulb')
--- lsp icon
-table.insert(use, 'onsails/lspkind-nvim')
-table.insert(apply, 'lspkind-nvim')
--- lsp UI
-table.insert(use, 'tami5/lspsaga.nvim')
-table.insert(apply, 'lspsaga')
--- lsp 颜色
-table.insert(use, 'folke/lsp-colors.nvim')
-table.insert(apply, 'lsp-colors')
--- 语言服务器
-table.insert(use, {
-        'neovim/nvim-lspconfig',
-        requires = {
-            'williamboman/nvim-lsp-installer',
-        }
-    })
-table.insert(apply, 'nvim-lspconfig')
--- 注释样式
-table.insert(use, {
-        'JoosepAlviste/nvim-ts-context-commentstring',
-        requires = 'nvim-treesitter/nvim-treesitter' -- 突出显示
-    })
-table.insert(apply, 'nvim-ts-context-commentstring')
--- 注释
-table.insert(use, 'numToStr/Comment.nvim')
-table.insert(apply, 'Comment')
--- 文档注释
-table.insert(use, {
-        'danymat/neogen',
-        requires = 'nvim-treesitter/nvim-treesitter' -- 突出显示
-    })
-table.insert(apply, 'neogen')
--- 测试
-table.insert(use, 'vim-test/vim-test')
-table.insert(apply, 'vim-test')
--- 代码诊断
-table.insert(use, 'mfussenegger/nvim-lint')
-table.insert(apply, 'nvim-lint')
--- 格式化
-table.insert(use, 'sbdchd/neoformat')
-table.insert(apply, 'neoformat')
--- 自动完成
-table.insert(use, 'hrsh7th/nvim-cmp')
-table.insert(use, 'hrsh7th/cmp-nvim-lsp')
-table.insert(use, 'hrsh7th/cmp-buffer')
-table.insert(use, 'hrsh7th/cmp-path')
--- table.insert(use, 'hrsh7th/cmp-cmdline')
--- 代码片段
-table.insert(use, 'hrsh7th/cmp-vsnip')
-table.insert(use, 'hrsh7th/vim-vsnip')
-table.insert(use, 'rafamadriz/friendly-snippets')
--- table.insert(use, 'SirVer/ultisnips')
--- table.insert(use, 'honza/vim-snippets')
--- 调试
--- 'puremourning/vimspector',
--- table.insert(use, 'mfussenegger/nvim-dap')
--- table.insert(apply, 'nvim-dap')
--- table.insert(use, {
---     'theHamsta/nvim-dap-virtual-text',
---     requires = {
---         'mfussenegger/nvim-dap',
---         {
---             'nvim-treesitter/nvim-treesitter', -- 突出显示
---             run = ':TSUpdate'
---         }
---     }
--- })
--- table.insert(apply, 'nvim-dap-virtual-text')
--- table.insert(use, {
---     'rcarriga/nvim-dap-ui',
---     requires = {
---         'mfussenegger/nvim-dap',
---     }
--- })
--- table.insert(apply, 'nvim-dap-ui')
--- -- 禅模式
--- table.insert(use, 'folke/zen-mode.nvim')
--- table.insert(apply, 'zen-mode')
 
 return {
     ['use'] = use,

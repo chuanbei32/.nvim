@@ -62,8 +62,8 @@ vim.opt.linebreak = true
 -- vim.cmd('set listchars=eol:$')
 vim.opt.report = 0
 -- cmd line
-vim.opt.wildmenu = false
-vim.opt.wildmode = 'list,longest,full'
+vim.opt.wildmenu = true
+vim.opt.wildmode = 'longest'
 vim.opt.wildignorecase = true
 -- vim.opt.wildignorecase = false
 vim.opt.showcmd = true
@@ -143,7 +143,6 @@ vim.opt.gdefault = false
 -- comment
 -- vim.opt.comments = ''
 -- vim.opt.commentstring = ''
-
 
 vim.opt.lazyredraw = true
 
