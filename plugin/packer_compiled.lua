@@ -269,11 +269,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-notify"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-notify",
-    url = "https://github.com/rcarriga/nvim-notify"
-  },
   ["nvim-peekup"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-peekup",
@@ -421,11 +416,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-expand-region",
     url = "https://github.com/terryma/vim-expand-region"
   },
-  ["vim-illuminate"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-illuminate",
-    url = "https://github.com/RRethy/vim-illuminate"
-  },
   ["vim-mundo"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-mundo",
@@ -451,11 +441,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-test",
     url = "https://github.com/vim-test/vim-test"
   },
-  ["vim-unimpaired"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-unimpaired",
-    url = "https://github.com/tpope/vim-unimpaired"
-  },
   ["vim-visual-multi"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
@@ -470,11 +455,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
-  },
-  ["zen-mode.nvim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
-    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
