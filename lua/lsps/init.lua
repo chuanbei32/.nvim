@@ -2,7 +2,7 @@ local utils = require("tools.utils")
 
 local lsps = {
     "lsps.lsp",
-    'lsps.completes'
+    'lsps.complete'
 }
 
 for _, cfg in ipairs(lsps) do

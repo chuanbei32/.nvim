@@ -1,4 +1,4 @@
--- options
+--
 -- print(vim.fn.stdpath("data"))
 
 vim.opt.belloff = 'all'

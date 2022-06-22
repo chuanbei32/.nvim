@@ -4,7 +4,6 @@ local opt = {
 	noremap = true
 }
 
-
 -- nvim-cmp 自动补全
 keys.cmp = function(cmp)
   return {

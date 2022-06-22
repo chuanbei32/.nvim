@@ -58,7 +58,7 @@ local function setup_plugins()
     for _, plugin in ipairs(plugins.use) do
       use(plugin)
     end
-    -- 应用插件配置文件
+    -- 应用插件配置
     for _, plugin in ipairs(plugins.apply) do
       local ok, err = xpcall(require, debug.traceback, "plugins.configs." .. plugin)
     end
