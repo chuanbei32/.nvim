@@ -10,7 +10,6 @@ local cfgs = {
     'colors',
     "plugins",
     "lsps",
-    "completes",
     "daps"
 }
 

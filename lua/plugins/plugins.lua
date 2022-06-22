@@ -110,9 +110,10 @@ table.insert(apply, 'impatient')
             'neovim/nvim-lspconfig', -- 语言服务器
             requires = {
                 'williamboman/nvim-lsp-installer', -- 自动安装语言服务器
-                'jose-elias-alvarez/null-ls.nvim' -- 非 LSP 转 LSP
+                'jose-elias-alvarez/null-ls.nvim' --
             }
         })
+
         -- LSP 符号信息
         table.insert(use, 'simrat39/symbols-outline.nvim')
         table.insert(apply, 'symbols-outline')
@@ -196,6 +197,7 @@ table.insert(apply, 'impatient')
 
     -- DAP「Debug Adapter Protocol」 {
         table.insert(use, 'mfussenegger/nvim-dap')
+
         table.insert(use, {
             'theHamsta/nvim-dap-virtual-text',
             requires = {

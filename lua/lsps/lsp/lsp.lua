@@ -4,19 +4,19 @@ local lsp_installer = require("nvim-lsp-installer")
 -- https://github.com/williamboman/nvim-lsp-installer#available-lsps
 -- { key: 语言 value: 配置文件 }
 local servers = {
-  tsserver = require("lsps.lsp.script"), -- javascript/typescript
-  bashls = require("lsps.lsp.shell"), -- bash
-  sumneko_lua = require("lsps.lsp.lua"),
-  -- phpactor = require("lsps.lsp.php"),
-  intelephense = require("lsps.lsp.php"),
-  -- psalm = require("lsps.lsp.php"),
-  gopls = require("lsps.lsp.go"),
-  pylsp = require("lsps.lsp.python"),
-  cssls = require("lsps.lsp.css"),
-  html = require("lsps.lsp.html"),
-  sql = require("lsps.lsp.sql"),
-  vue = require("lsps.lsp.vue"),
-  vimls = require("lsps.lsp.vimscript"),
+  tsserver = require("lsps.lsp.lsp.script"), -- javascript/typescript
+  bashls = require("lsps.lsp.lsp.shell"), -- bash
+  sumneko_lua = require("lsps.lsp.lsp.lua"),
+  -- phpactor = require("lsps.lsp.lsp.php"),
+  intelephense = require("lsps.lsp.lsp.php"),
+  -- psalm = require("lsps.lsp.lsp.php"),
+  gopls = require("lsps.lsp.lsp.go"),
+  pylsp = require("lsps.lsp.lsp.python"),
+  cssls = require("lsps.lsp.lsp.css"),
+  html = require("lsps.lsp.lsp.html"),
+  sql = require("lsps.lsp.lsp.sql"),
+  vue = require("lsps.lsp.lsp.vue"),
+  vimls = require("lsps.lsp.lsp.vimscript"),
 }
 
 -- 自动安装 LanguageServers
@@ -36,7 +36,7 @@ lsp_installer.on_server_ready(function(server)
       local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
       -- local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
       -- 绑定快捷键
-      require('lsps.lspKey').maplsp(buf_set_keymap)
+      require('lsps.lsp.lspKey').maplsp(buf_set_keymap)
     end
     opts.flags = {
       debounce_text_changes = 150,
