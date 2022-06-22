@@ -234,16 +234,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-dap",
-    url = "https://github.com/mfussenegger/nvim-dap"
-  },
-  ["nvim-dap-virtual-text"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
-    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
-  },
   ["nvim-hlslens"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
@@ -386,11 +376,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/tabout.nvim",
     url = "https://github.com/abecodes/tabout.nvim"
   },
-  tagbar = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/tagbar",
-    url = "https://github.com/preservim/tagbar"
-  },
   ["targets.vim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/targets.vim",
@@ -435,11 +420,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-expand-region",
     url = "https://github.com/terryma/vim-expand-region"
-  },
-  ["vim-gutentags"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-gutentags",
-    url = "https://github.com/ludovicchabant/vim-gutentags"
   },
   ["vim-illuminate"] = {
     loaded = true,

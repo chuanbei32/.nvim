@@ -53,64 +53,14 @@ local function setup_plugins()
       "wbthomason/packer.nvim",
       event = "VimEnter",
     })
-
-    local plugins = {}
-    local function split(str,reps)
-        local resultStrList = {}
-        string.gsub(str,'[^'..reps..']+',function (w)
-            table.insert(resultStrList,w)
-        end)
-        return resultStrList
-    end
-    local function todoPlugin(plugin)
-      -- print(type(plugin))
-      -- print(type(plugin) == 'table')
-      if type(plugin) == 'table' then
-        for _, tmp in ipairs(plugin) do
-            -- print(type(tmp))
-            -- print(tmp)
-            todoPlugin(tmp)
-        end
-      else
-        -- print(plugin)
-        -- print(string.find(plugin, '.'))
-        if string.find(plugin, '.') == nil then
-          table.insert(plugins, plugin)
-        else
-          table.insert(plugins, split(split(plugin, '/')[2], '.')[1])
-        end
-      end
-    end
-
-    for _, plugin in ipairs(require("plugins.packerUse")) do
-      -- print(type(plugin))
+    local plugins = require("plugins.plugins")
+    -- 应用插件
+    for _, plugin in ipairs(plugins.use) do
       use(plugin)
-      todoPlugin(plugin)
     end
-
-    for _, plugin in ipairs(plugins) do
-      -- print(plugin)
-      local mark = 0
-      local path = vim.fn.stdpath("config") .. "/lua/plugins/configs/"
-      ::continue::
-      if mark == 2 then
-        utils.errorL(err)
-        break
-      end
+    -- 应用插件配置文件
+    for _, plugin in ipairs(plugins.apply) do
       local ok, err = xpcall(require, debug.traceback, "plugins.configs." .. plugin)
-      -- print(ok)
-      if not ok then
-        mark = mark + 1
-        pcall(os.execute, "mkdir -p " .. path)
-        -- local file = pcall(io.open, path .. cfg .. '.lua', "a")
-        local file = io.open(path .. plugin .. '.lua', "a")
-        print(path .. plugin .. '.lua')
-        -- print(file)
-        io.output(file)
-        -- io.write("")
-        io.close(file)
-        goto continue
-      end
     end
   end)
 end
