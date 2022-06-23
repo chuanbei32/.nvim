@@ -1,6 +1,16 @@
-local mapDAP = function()
+local M = {}
+
+local opt = {
+  noremap = true,
+  silent = true,
+}
+
+local map = vim.api.nvim_set_keymap
+
+M.mapDAP = function()
+
   -- 开始
-  map("n", "<leader>dd", ":RustDebuggables<CR>", opt)
+  map("n", "<leader>dd", ":lua require'dap'.run()<cr>", opt)
   -- 结束
   map(
     "n",
@@ -26,4 +36,4 @@ local mapDAP = function()
   map("n", "<leader>dh", ":lua require'dapui'.eval()<CR>", opt)
 end
 
-return mapDAP
+return M

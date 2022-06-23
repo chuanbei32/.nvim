@@ -10,7 +10,7 @@ local cfgs = {
     'colors',
     "plugins",
     "lsps",
-    "daps"
+    -- "daps"
 }
 
 for _, cfg in ipairs(cfgs) do
