@@ -1,4 +1,4 @@
-require("impatient").enable_profile()
+-- require("impatient").enable_profile()
 
 local utils = require("tools.utils")
 
@@ -7,10 +7,9 @@ local cfgs = {
     'commands',
     'autocommands',
     'mappings',
-    'colors',
     "plugins",
     "lsps",
-    -- "daps"
+    'colors',
 }
 
 for _, cfg in ipairs(cfgs) do

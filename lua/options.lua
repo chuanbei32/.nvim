@@ -5,10 +5,6 @@ vim.opt.belloff = 'all'
 vim.opt.errorbells = false
 vim.opt.visualbell = true
 
-vim.opt.termguicolors = true
-vim.opt.background = 'dark'
-vim.cmd('colorscheme gruvbox-material')
-
 -- 文件类型检测
 -- filetype plugin indent on
 -- filetype on

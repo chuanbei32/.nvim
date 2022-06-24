@@ -54,13 +54,18 @@ local function setup_plugins()
       event = "VimEnter",
     })
     local plugins = require("plugins.plugins")
-    -- 应用插件
-    for _, plugin in ipairs(plugins.use) do
-      use(plugin)
-    end
-    -- 应用插件配置
-    for _, plugin in ipairs(plugins.apply) do
-      local ok, err = xpcall(require, debug.traceback, "plugins.plugin." .. plugin)
+    for _, plugin in ipairs(plugins) do
+      local p, c = plugin[1], plugin[2]
+      -- 应用插件
+      if (p ~= nil)
+      then
+        use(p)
+      end
+      -- 应用插件配置
+      if (c ~= nil)
+      then
+        local ok, err = xpcall(require, debug.traceback, "plugins.plugin." .. c)
+      end
     end
   end)
 end

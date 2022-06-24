@@ -5,6 +5,7 @@ local utils = require("tools.utils")
 local cfgs = {
     "lsps.lsp",
     "lsps.complete",
+    -- "lsps.dap",
 }
 
 for _, cfg in ipairs(cfgs) do
