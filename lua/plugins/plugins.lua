@@ -5,41 +5,28 @@ local function inserts(plugin, config)
 end
 
 -- Tools {
-
     inserts('lewis6991/impatient.nvim', 'impatient') -- 插件字节码缓存
     inserts('tweekmonster/startuptime.vim', 'startuptime') -- 启动时间分析
-
 -- }
 
--- Dependence {
-
-    inserts(nil, 'nvim-web-devicons')
-
--- }
+inserts('nathom/filetype.nvim', nil) -- 文件类型
 
 -- Work Flow {
-
-    inserts('nathom/filetype.nvim', nil) -- 文件类型
-
     inserts('sainnhe/gruvbox-material', 'gruvbox-material') -- 主题配色
 
     inserts('akinsho/bufferline.nvim', 'bufferline') -- 缓冲区/标签区
     inserts({'nvim-treesitter/nvim-treesitter'}, 'nvim-treesitter')
-    inserts('norcalli/nvim-colorizer.lua', 'nvim-colorizer.lua')
+    inserts('norcalli/nvim-colorizer.lua', 'nvim-colorizer.lua') -- 颜色编码转视觉颜色
     -- inserts('airblade/vim-rooter', 'vim-rooter') -- 自动设置/更改工作目录
     inserts('ethanholz/nvim-lastplace', 'nvim-lastplace') -- 自动定位到上次离开位置
     -- inserts('Pocco81/AutoSave.nvim', 'AutoSave') -- 自动保存文件
     inserts('jghauser/mkdir.nvim', nil) -- 自动创建缺失文件夹
     -- Windows {
-
         inserts('mhinz/vim-startify', 'vim-startify') -- 启动页/仪表盘
-
         inserts('sunjon/shade.nvim', 'shade')  -- 非活动窗口亮度降低
         inserts('xiyaowong/nvim-transparent', 'nvim-transparent') -- 透明模式
-
         inserts('folke/twilight.nvim', 'twilight') -- 专注模式
         inserts('folke/zen-mode.nvim', 'zen-mode') -- 禅定模式
-
         inserts('simnalamburt/vim-mundo') -- 撤销管理器
         inserts('gennaro-tedesco/nvim-peekup') -- 寄存器/宏管理器
         inserts('skywind3000/asyncrun.vim', 'asyncrun') -- 异步运行管理器
@@ -56,19 +43,18 @@ end
         inserts('windwp/nvim-spectre', 'nvim-spectre') -- 模糊查找/搜索、替换
         inserts('folke/todo-comments.nvim', 'todo-comments') -- 待办事项高亮、搜索/查找
         inserts('chentoast/marks.nvim', 'marks') -- 标记/书签、搜索/查找
-
     -- }
     inserts({'nvim-lualine/lualine.nvim', requires = 'kyazdani42/nvim-web-devicons'}, 'lualine') -- 状态栏
 
-    inserts('folke/which-key.nvim') -- 映射提示
-    inserts('tpope/vim-repeat') -- 重复
+    inserts('folke/which-key.nvim', 'which-key') -- 映射提示
+    inserts('tpope/vim-repeat', 'vim-repeat') -- 重复
     -- 跳转 {
-        -- inserts('phaazon/hop.nvim') -- 跳转提示
+        inserts('phaazon/hop.nvim') -- 跳转提示
         inserts('edluffy/specs.nvim', 'specs') -- 跳转视觉
         inserts('rainbowhxch/accelerated-jk.nvim') -- j/k 加速移动
         inserts('hrsh7th/vim-eft') -- f/t 搜索/查找高亮
         -- inserts('kevinhwang91/nvim-hlslens') -- / 搜索/查找高亮
-        -- inserts('rktjmp/highlight-current-n.nvim') -- 高亮光标下词
+        inserts('rktjmp/highlight-current-n.nvim', 'highlight-current-n') -- 高亮光标下词
         inserts({
             'winston0410/range-highlight.nvim', -- 范围高亮
             requires = {
@@ -88,34 +74,27 @@ end
     inserts('windwp/nvim-autopairs', 'nvim-autopairs') -- 括号补全
     inserts({'p00f/nvim-ts-rainbow', requires = 'nvim-treesitter/nvim-treesitter'}, 'nvim-ts-rainbow') -- 彩虹括号
     inserts('lukas-reineke/indent-blankline.nvim', 'indent-blankline') -- 缩进显示
-
     -- inserts('echasnovski/mini.nvim', 'mini')
     -- inserts('tpope/vim-unimpaired', 'vim-unimpaired')
-    -- inserts({'abecodes/tabout.nvim', requires= 'nvim-treesitter/nvim-treesitter'}, 'tabout') --
+    -- inserts({'abecodes/tabout.nvim', requires= 'nvim-treesitter/nvim-treesitter'}, 'tabout')
     -- inserts({'nvim-treesitter/nvim-treesitter-textobjects', requires = 'nvim-treesitter/nvim-treesitter'}, 'nvim-treesitter-textobjects') -- 文本对象增强
     -- inserts('wellle/targets.vim') -- 文本对象扩展
     -- inserts('terryma/vim-expand-region') -- 文本区域扩张
     -- inserts({'RRethy/nvim-treesitter-textsubjects', requires = 'nvim-treesitter/nvim-treesitter'}, 'nvim-treesitter-textsubjects') -- 文本对象选择
-    -- inserts('mg979/vim-visual-multi') -- 多游标
-    -- inserts('AndrewRadev/switch.vim') -- 转换单词为单词的反义词
-    -- inserts('AndrewRadev/dsf.vim') -- 删除调用函数
+    inserts('mg979/vim-visual-multi') -- 多行操作
+    inserts('AndrewRadev/switch.vim', 'switch') -- 转换单词为单词的反义词
+    -- inserts('AndrewRadev/dsf.vim', 'dsf') -- 删除调用函数
+    -- inserts('Vonr/align.nvim', 'align') -- 代码对齐
     -- inserts('junegunn/vim-easy-align') -- 代码对齐
-    -- inserts('tpope/vim-surround') -- 修改、删除等成对符号
-    -- inserts('FooSoft/vim-argwrap') -- 格式化数组、字典、集合等
+    -- inserts('tpope/vim-surround', 'vim-surround') -- 修改、删除等成对符号
+    -- inserts('FooSoft/vim-argwrap', 'vim-argwrap') -- 格式化数组、字典、集合等
     -- inserts({'mizlan/iswap.nvim', requires = 'nvim-treesitter/nvim-treesitter'}, 'iswap.nvim') -- 函数参数、数组数据、字典数据、集合数据等交换
     -- inserts({'windwp/nvim-ts-autotag', requires = 'nvim-treesitter/nvim-treesitter'}, 'nvim-ts-autotag') -- 自动关闭和自动重命名 sgml 标记
-    -- inserts({'m-demare/hlargs.nvim', requires = 'nvim-treesitter/nvim-treesitter'}, 'hlargs') --
-    -- -- 版本控制 {
-    --     -- Git {
-    --         inserts('lewis6991/gitsigns.nvim')
-    --         -- {
-    --         --     'sindrets/diffview.nvim',                      -- git diff
-    --         --     requires = {
-    --         --         'nvim-lua/plenary.nvim'
-    --         --     }
-    --         -- }
-    --     -- }
-    -- -- }
+    inserts({'m-demare/hlargs.nvim', requires = 'nvim-treesitter/nvim-treesitter'}, 'hlargs') -- 突出显示函数参数
+
+    -- Git {
+        -- inserts('lewis6991/gitsigns.nvim', 'gitsigns')
+    -- }
 
     -- LSP「Language Server Protocol」 {
         inserts({'neovim/nvim-lspconfig', requires = {'williamboman/nvim-lsp-installer', 'jose-elias-alvarez/null-ls.nvim'}})
@@ -188,6 +167,10 @@ end
             -- }
         -- }
     -- }
+-- }
+
+-- Dependence Config {
+    inserts(nil, 'nvim-web-devicons')
 -- }
 
 return M
