@@ -6,5 +6,5 @@ vim.cmd [[
 	colorscheme gruvbox-material
 
 	highlight IndentBlanklineIndent1 guibg=#1f1f1f gui=nocombine
-	highlight IndentBlanklineIndent2 guibg=#1a1a1a gui=nocombine
+	highlight IndentBlanklineIndent2 guibg=#32302f gui=nocombine
 ]]

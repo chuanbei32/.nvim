@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["AutoSave.nvim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/AutoSave.nvim",
+    url = "https://github.com/Pocco81/AutoSave.nvim"
+  },
   ["Comment.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/Comment.nvim",
@@ -154,11 +159,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
   },
-  ["highlight-current-n.nvim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/highlight-current-n.nvim",
-    url = "https://github.com/rktjmp/highlight-current-n.nvim"
-  },
   ["hop.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/hop.nvim",
@@ -198,11 +198,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/marks.nvim",
     url = "https://github.com/chentoast/marks.nvim"
-  },
-  ["mkdir.nvim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/mkdir.nvim",
-    url = "https://github.com/jghauser/mkdir.nvim"
   },
   neoformat = {
     loaded = true,
@@ -264,11 +259,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-spectre",
     url = "https://github.com/windwp/nvim-spectre"
   },
-  ["nvim-transparent"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-transparent",
-    url = "https://github.com/xiyaowong/nvim-transparent"
-  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -293,6 +283,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["nvim-window"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-window",
+    url = "https://gitlab.com/yorickpeterse/nvim-window"
   },
   ["packer.nvim"] = {
     loaded = false,
@@ -325,11 +320,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/shade.nvim",
     url = "https://github.com/sunjon/shade.nvim"
-  },
-  ["specs.nvim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/specs.nvim",
-    url = "https://github.com/edluffy/specs.nvim"
   },
   ["startuptime.vim"] = {
     loaded = true,
@@ -371,6 +361,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-eft",
     url = "https://github.com/hrsh7th/vim-eft"
   },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
+  },
   ["vim-mundo"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-mundo",
@@ -380,6 +375,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-repeat",
     url = "https://github.com/tpope/vim-repeat"
+  },
+  ["vim-rooter"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-rooter",
+    url = "https://github.com/airblade/vim-rooter"
   },
   ["vim-snippets"] = {
     loaded = true,
@@ -410,11 +410,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
-  },
-  ["zen-mode.nvim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
-    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 

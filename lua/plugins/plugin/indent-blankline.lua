@@ -18,7 +18,7 @@ require("indent_blankline").setup {
         "IndentBlanklineIndent1",
         "IndentBlanklineIndent2",
     },
-    -- show_trailing_blankline_indent = false,
+    show_trailing_blankline_indent = false,
 }
 
 -- vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
