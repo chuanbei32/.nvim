@@ -1,3 +1,10 @@
 vim.opt.termguicolors = true
 vim.opt.background = 'dark'
-vim.cmd('colorscheme gruvbox-material')
+
+-- indent_blankline
+vim.cmd [[
+	colorscheme gruvbox-material
+
+	highlight IndentBlanklineIndent1 guibg=#1f1f1f gui=nocombine
+	highlight IndentBlanklineIndent2 guibg=#1a1a1a gui=nocombine
+]]

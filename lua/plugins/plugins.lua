@@ -15,6 +15,7 @@ inserts('nathom/filetype.nvim', nil) -- 文件类型
     inserts('sainnhe/gruvbox-material', 'gruvbox-material') -- 主题配色
 
     inserts('akinsho/bufferline.nvim', 'bufferline') -- 缓冲区/标签区
+
     inserts({'nvim-treesitter/nvim-treesitter'}, 'nvim-treesitter')
     inserts('norcalli/nvim-colorizer.lua', 'nvim-colorizer.lua') -- 颜色编码转视觉颜色
     -- inserts('airblade/vim-rooter', 'vim-rooter') -- 自动设置/更改工作目录
@@ -44,6 +45,7 @@ inserts('nathom/filetype.nvim', nil) -- 文件类型
         inserts('folke/todo-comments.nvim', 'todo-comments') -- 待办事项高亮、搜索/查找
         inserts('chentoast/marks.nvim', 'marks') -- 标记/书签、搜索/查找
     -- }
+
     inserts({'nvim-lualine/lualine.nvim', requires = 'kyazdani42/nvim-web-devicons'}, 'lualine') -- 状态栏
 
     inserts('folke/which-key.nvim', 'which-key') -- 映射提示
@@ -75,14 +77,14 @@ inserts('nathom/filetype.nvim', nil) -- 文件类型
     inserts({'p00f/nvim-ts-rainbow', requires = 'nvim-treesitter/nvim-treesitter'}, 'nvim-ts-rainbow') -- 彩虹括号
     inserts('lukas-reineke/indent-blankline.nvim', 'indent-blankline') -- 缩进显示
     -- inserts('echasnovski/mini.nvim', 'mini')
-    -- inserts('tpope/vim-unimpaired', 'vim-unimpaired')
+    inserts('tpope/vim-unimpaired', 'vim-unimpaired')
     -- inserts({'abecodes/tabout.nvim', requires= 'nvim-treesitter/nvim-treesitter'}, 'tabout')
     -- inserts({'nvim-treesitter/nvim-treesitter-textobjects', requires = 'nvim-treesitter/nvim-treesitter'}, 'nvim-treesitter-textobjects') -- 文本对象增强
     -- inserts('wellle/targets.vim') -- 文本对象扩展
     -- inserts('terryma/vim-expand-region') -- 文本区域扩张
     -- inserts({'RRethy/nvim-treesitter-textsubjects', requires = 'nvim-treesitter/nvim-treesitter'}, 'nvim-treesitter-textsubjects') -- 文本对象选择
-    inserts('mg979/vim-visual-multi') -- 多行操作
-    inserts('AndrewRadev/switch.vim', 'switch') -- 转换单词为单词的反义词
+    -- inserts('mg979/vim-visual-multi') -- 多行操作
+    -- inserts('AndrewRadev/switch.vim', 'switch') -- 转换单词为单词的反义词
     -- inserts('AndrewRadev/dsf.vim', 'dsf') -- 删除调用函数
     -- inserts('Vonr/align.nvim', 'align') -- 代码对齐
     -- inserts('junegunn/vim-easy-align') -- 代码对齐
@@ -90,24 +92,24 @@ inserts('nathom/filetype.nvim', nil) -- 文件类型
     -- inserts('FooSoft/vim-argwrap', 'vim-argwrap') -- 格式化数组、字典、集合等
     -- inserts({'mizlan/iswap.nvim', requires = 'nvim-treesitter/nvim-treesitter'}, 'iswap.nvim') -- 函数参数、数组数据、字典数据、集合数据等交换
     -- inserts({'windwp/nvim-ts-autotag', requires = 'nvim-treesitter/nvim-treesitter'}, 'nvim-ts-autotag') -- 自动关闭和自动重命名 sgml 标记
-    inserts({'m-demare/hlargs.nvim', requires = 'nvim-treesitter/nvim-treesitter'}, 'hlargs') -- 突出显示函数参数
+    -- inserts({'m-demare/hlargs.nvim', requires = 'nvim-treesitter/nvim-treesitter'}, 'hlargs') -- 突出显示函数参数
 
     -- Git {
-        -- inserts('lewis6991/gitsigns.nvim', 'gitsigns')
+        inserts('lewis6991/gitsigns.nvim', 'gitsigns')
     -- }
 
     -- LSP「Language Server Protocol」 {
         inserts({'neovim/nvim-lspconfig', requires = {'williamboman/nvim-lsp-installer', 'jose-elias-alvarez/null-ls.nvim'}})
-        -- DAP「Debug Adapter Protocol」 {
-            inserts({
-                'mfussenegger/nvim-dap',
-                requires = {
-                    'jbyuki/one-small-step-for-vimkind',
-                    'theHamsta/nvim-dap-virtual-text',
-                    'rcarriga/nvim-dap-ui',
-                }
-            })
-        -- }
+        -- -- DAP「Debug Adapter Protocol」 {
+        --     inserts({
+        --         'mfussenegger/nvim-dap',
+        --         requires = {
+        --             'jbyuki/one-small-step-for-vimkind',
+        --             'theHamsta/nvim-dap-virtual-text',
+        --             'rcarriga/nvim-dap-ui',
+        --         }
+        --     })
+        -- -- }
         inserts('vim-test/vim-test', 'test') -- 测试
         inserts('sbdchd/neoformat', 'neoformat') -- 格式化
         -- 代码诊断 {
@@ -148,22 +150,22 @@ inserts('nathom/filetype.nvim', nil) -- 文件类型
                 inserts('hrsh7th/vim-vsnip')
                 inserts('honza/vim-snippets')
                 inserts('rafamadriz/friendly-snippets')
-                inserts({
-                    'quangnguyen30192/cmp-nvim-ultisnips',
-                    requires = {
-                        'SirVer/ultisnips',
-                    },
-                    config = function()
-                        require("cmp_nvim_ultisnips").setup{}
-                    end,
-                })
-                inserts({
-                    'L3MON4D3/LuaSnip',
-                    requires = {
-                        'saadparwaiz1/cmp_luasnip',
-                    }
-                })
-                inserts({'dcampos/nvim-snippy', requires = 'dcampos/cmp-snippy'}, 'nvim-snippy')
+                -- inserts({
+                --     'quangnguyen30192/cmp-nvim-ultisnips',
+                --     requires = {
+                --         'SirVer/ultisnips',
+                --     },
+                --     config = function()
+                --         require("cmp_nvim_ultisnips").setup{}
+                --     end,
+                -- })
+                -- inserts({
+                --     'L3MON4D3/LuaSnip',
+                --     requires = {
+                --         'saadparwaiz1/cmp_luasnip',
+                --     }
+                -- })
+                -- inserts({'dcampos/nvim-snippy', requires = 'dcampos/cmp-snippy'}, 'nvim-snippy')
             -- }
         -- }
     -- }

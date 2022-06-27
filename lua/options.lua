@@ -59,7 +59,7 @@ vim.opt.linebreak = true
 vim.opt.report = 0
 -- cmd line
 vim.opt.wildmenu = true
-vim.opt.wildmode = 'longest'
+vim.opt.wildmode = 'longest,full'
 vim.opt.wildignorecase = true
 -- vim.opt.wildignorecase = false
 vim.opt.showcmd = true
