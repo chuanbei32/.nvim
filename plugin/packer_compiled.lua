@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["accelerated-jk.nvim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/accelerated-jk.nvim",
-    url = "https://github.com/rainbowhxch/accelerated-jk.nvim"
-  },
   ["aerial.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/aerial.nvim",
@@ -321,11 +316,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/shade.nvim",
     url = "https://github.com/sunjon/shade.nvim"
   },
-  ["startuptime.vim"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/startuptime.vim",
-    url = "https://github.com/tweekmonster/startuptime.vim"
-  },
   ["symbols-outline.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
@@ -376,11 +366,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-repeat",
     url = "https://github.com/tpope/vim-repeat"
   },
-  ["vim-rooter"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-rooter",
-    url = "https://github.com/airblade/vim-rooter"
-  },
   ["vim-snippets"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-snippets",
@@ -395,11 +380,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-test",
     url = "https://github.com/vim-test/vim-test"
-  },
-  ["vim-unimpaired"] = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/vim-unimpaired",
-    url = "https://github.com/tpope/vim-unimpaired"
   },
   ["vim-vsnip"] = {
     loaded = true,

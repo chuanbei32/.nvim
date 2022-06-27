@@ -1,4 +1,4 @@
--- require("impatient").enable_profile()
+require("impatient").enable_profile()
 
 local utils = require("tools.utils")
 

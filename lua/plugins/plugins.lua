@@ -5,7 +5,6 @@ local function inserts(plugin, config)
 end
 
 inserts('lewis6991/impatient.nvim', nil) -- 插件字节码缓存
-inserts('tweekmonster/startuptime.vim', nil) -- 启动时间分析
 
 -- global {
     inserts('sainnhe/gruvbox-material', 'gruvbox-material') -- 主题配色
@@ -37,6 +36,7 @@ inserts('tweekmonster/startuptime.vim', nil) -- 启动时间分析
     inserts('windwp/nvim-spectre', 'nvim-spectre') -- 模糊查找/搜索、替换
     inserts('folke/todo-comments.nvim', 'todo-comments') -- 待办事项高亮、搜索/查找
     inserts('chentoast/marks.nvim', 'marks') -- 标记/书签、搜索/查找
+    -- inserts('j-hui/fidget.nvim') -- lsp 独立加载信息窗口
 -- }
 
 -- buffer {
@@ -70,7 +70,7 @@ inserts('tweekmonster/startuptime.vim', nil) -- 启动时间分析
     inserts({'p00f/nvim-ts-rainbow', requires = 'nvim-treesitter/nvim-treesitter'}, 'nvim-ts-rainbow') -- 彩虹括号
     inserts('lukas-reineke/indent-blankline.nvim', 'indent-blankline') -- 缩进显示
     -- inserts('echasnovski/mini.nvim', 'mini')
-    inserts('tpope/vim-unimpaired', 'vim-unimpaired')
+    -- inserts('tpope/vim-unimpaired', 'vim-unimpaired')
     -- inserts({'abecodes/tabout.nvim', requires= 'nvim-treesitter/nvim-treesitter'}, 'tabout')
     -- inserts({'nvim-treesitter/nvim-treesitter-textobjects', requires = 'nvim-treesitter/nvim-treesitter'}, 'nvim-treesitter-textobjects') -- 文本对象增强
     -- inserts('wellle/targets.vim') -- 文本对象扩展
@@ -110,14 +110,12 @@ inserts('tweekmonster/startuptime.vim', nil) -- 启动时间分析
                 requires = 'kyazdani42/nvim-web-devicons',
             }, 'trouble')
         -- }
-        inserts('simrat39/symbols-outline.nvim', 'symbols-outline') -- LSP 符号信息
-        inserts('stevearc/aerial.nvim', 'aerial') -- LSP 代码大纲
-        inserts('onsails/lspkind-nvim') -- LSP 图标
-        inserts('ray-x/lsp_signature.nvim') -- LSP 签名提示
-        -- inserts('nvim-lua/lsp-status.nvim') -- LSP 状态栏信息
-        -- inserts('j-hui/fidget.nvim') -- LSP 独立加载信息窗口
-        -- inserts('tami5/lspsaga.nvim') -- LSP 界面
-        -- inserts('folke/lsp-colors.nvim') -- LSP 颜色
+        inserts('simrat39/symbols-outline.nvim', 'symbols-outline') -- lsp 符号信息
+        inserts('stevearc/aerial.nvim', 'aerial') -- lsp 代码大纲
+        inserts('onsails/lspkind-nvim') -- lsp 图标
+        inserts('ray-x/lsp_signature.nvim') -- lsp 签名提示
+        -- inserts('tami5/lspsaga.nvim') -- lsp 界面
+        -- inserts('folke/lsp-colors.nvim') -- lsp 颜色
         -- inserts({'RishabhRD/nvim-lsputils', requires = 'RishabhRD/popfix'}, 'hlargs') -- 操作增强
         -- inserts({'kosayoda/nvim-lightbulb', requires = 'antoinemadec/FixCursorHold.nvim'}, 'hlargs') -- 操作增强
         -- inserts({'jubnzv/virtual-types.nvim', config = function() require'lspconfig'.ocamllsp.setup{on_attach=require'virtualtypes'.on_attach} end}, 'hlargs') -- 类型注释显示
@@ -163,6 +161,7 @@ inserts('tweekmonster/startuptime.vim', nil) -- 启动时间分析
 
 -- status {
     inserts({'nvim-lualine/lualine.nvim', requires = 'kyazdani42/nvim-web-devicons'}, 'lualine') -- 状态栏
+    -- inserts('nvim-lua/lsp-status.nvim') -- lsp 状态栏信息
 -- }
 
 -- command {
