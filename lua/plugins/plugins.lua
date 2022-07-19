@@ -4,8 +4,6 @@ local function inserts(plugin, config)
     table.insert(M, {plugin, config})
 end
 
-inserts('lewis6991/impatient.nvim', nil) -- 插件字节码缓存
-
 -- global {
     inserts('sainnhe/gruvbox-material', 'gruvbox-material') -- 主题配色
     inserts('nathom/filetype.nvim', nil) -- 文件类型
@@ -170,6 +168,11 @@ inserts('lewis6991/impatient.nvim', nil) -- 插件字节码缓存
 
 -- Dependence Config {
     inserts(nil, 'nvim-web-devicons')
+-- }
+
+-- {
+    inserts('lewis6991/impatient.nvim', nil) -- 插件字节码缓存
+    -- inserts({'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end}) --
 -- }
 
 return M
